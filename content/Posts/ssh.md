@@ -1,0 +1,24 @@
+Title: ssh
+Date: 2011-03-26 10:20
+Tags: ssh, ubuntu
+Slug: ssh
+
+## Installing ssh server
+
+    sudo apt-get install openssh-server
+
+## Setting up ssh connections without requiring a password
+
+1. Copy public key from local machine to remote machine
+
+        scp ~/.ssh/id_rsa.pub mythbox@c2:/tmp/jess.id_rsa.pub
+
+2. Log in to remote machine and append public key to authorized_keys file
+
+        ssh mythbox@c2
+        cat /tmp/jess.id_rsa.pub >> .ssh/authorized_keys
+
+##Remove ssh key
+If a server's IP address has changed, trying to connect via ssh will fail because the IP address stored against the server's key no longer matches.  If you're sure there is no man-in-the-middle attack in play, you can remove the offending key
+
+    ssh-keygen -R <hostname> 
