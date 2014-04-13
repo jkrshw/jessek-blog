@@ -1,0 +1,23 @@
+Title: Amarok
+Date: 2011-03-26 10:20
+Tags: amarok, ubuntu
+Slug: amarok
+
+## Amarok on ubuntu with mp3 support run
+    
+    sudo apt-get install amarok libxine1-ffmpeg
+
+<http://ubuntuforums.org/showthread.php?t=1521168>
+
+If amarok can't play mp3's after an upgrade removing the xine config dir can help
+
+    mv ~/.xine xine_bak
+
+<http://ubuntuforums.org/showthread.php?t=1439468>
+
+## Control amarok remotely with ssh X forwarding
+
+1. Setup a passwordless ssh connection to the remote machine
+2. Create a shortcut to run amarok over ssh
+
+        ssh -X mythbox@c2 amarok
