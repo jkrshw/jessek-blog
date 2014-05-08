@@ -1,7 +1,16 @@
 language: python
 python:
-  - "2.7"
+- '2.7'
 install:
-  - pip install -r requirements.txt 
-  - pelican-themes -i pure
+- pip install -r requirements.txt
+- pelican-themes -i pure
 script: make publish
+deploy:
+  provider: s3
+  access_key_id: AKIAICC7Z3GSB5QRCTKA
+  secret_access_key:
+    secure: YctUpSaHxQqn3wWOnHgWDjtyztBxWNorQPmAl/z6NreymTRJGcpwK0sxJClSYSHO0HlXXAXFmfmDg5IaXmIrQTYz8qPEYS7FEopTy/BcJYmj8FPcA4XzvcHAo9F/g8cbm+MhFb32x22KSBe5Dzz1xzsChFwpuyoEaX/lginPjSY=
+  skip_cleanup: true
+  local-dir: output
+  region: ap-southeast-2
+  endpoint: jessek.co.nz.s3-website-ap-southeast-2.amazonaws.com
