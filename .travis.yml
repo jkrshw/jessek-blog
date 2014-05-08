@@ -9,7 +9,7 @@ deploy:
   provider: s3
   access_key_id: AKIAICC7Z3GSB5QRCTKA
   secret_access_key:
-    secure: YctUpSaHxQqn3wWOnHgWDjtyztBxWNorQPmAl/z6NreymTRJGcpwK0sxJClSYSHO0HlXXAXFmfmDg5IaXmIrQTYz8qPEYS7FEopTy/BcJYmj8FPcA4XzvcHAo9F/g8cbm+MhFb32x22KSBe5Dzz1xzsChFwpuyoEaX/lginPjSY=
+    secure: d9VJXcSahW+OjUxKyHEM/TE4BGjfq2NAAY2XP8e6MbfwEVOjquJDk5hHu8y8Mjh2UHP2AWMPhUmaSEluWoTc3Vc85FcKegLwj5VB3iF0UH8ykM3pBLdptpc63oFFuKo3BeyU1tWdGj0iHK557MMvhUWc6og27pcrLQo340qsgD0=
   skip_cleanup: true
   local-dir: output
   region: ap-southeast-2
