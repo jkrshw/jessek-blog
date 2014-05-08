@@ -25,8 +25,6 @@ SOCIAL = (
     ('google-plus-square', 'https://plus.google.com/+JesseKershaw'),
 )
 
-# SOCIAL = (('twitter-square', 'https://twitter.com/jkrshw'),)
-
 TWITTER_USERNAME = "jkrshw"
 
 DEFAULT_PAGINATION = 4
