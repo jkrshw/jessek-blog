@@ -1,6 +1,6 @@
 Title: Continuous Blogging
 Date: 2014-05-10 09:03
-Tags: blogging, travis-ci, github
+Tags: blogging, travis-ci, github, pelican, python
 Slug: continuous-blog
 
 Continuous Blogging
@@ -70,7 +70,7 @@ Themes are installed from source into the development environment using the comm
 
 Add the theme as a git submodule
 
-```
+```bash
 git add submodule https://github.com/jkrshw/pure.git pure
 ```
 
@@ -88,6 +88,11 @@ script: make publish
 
 Push the changes and now you should have your first sucessful build!
 
+```bash
+git add .travis.yml
+git commit -m"Add pelican theme"
+git push origin master
+```
 
 Plugins
 -------
