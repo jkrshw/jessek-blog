@@ -28,7 +28,7 @@ install:
 script: make publish
 ```
 
-This script will set up a python 2.7 environment and install the dependencies specified in the requirements.txt file. You may need to generate the requirements.txt file if you don't alreay have one: 
+This script will set up a python 2.7 environment and install the dependencies specified in the requirements.txt file. You may need to generate the requirements.txt file if you don't alreay have one
 
 ```bash
 pip freeze > requirements.txt
@@ -96,6 +96,41 @@ git push origin master
 
 Plugins
 -------
+
+After including the theme, pelican will happily generate html but will not be able to find any plugins
+
+```
+ERROR: Can't find plugin `sitemap`: No module named sitemap
+ERROR: Can't find plugin `gravatar`: No module named gravatar
+Done: Processed 29 articles and 0 pages in 1.84 seconds.
+
+The command "make publish" exited with 0.
+
+Done. Your build exited with 0.
+```
+
+Unlike themes, plugins are include via source and a variable in ```pelicanconf.py``` instead of being installed into the dev environment. Instead of being able to include specific plugin like for the themes, all plugins need to be included as a submodule
+
+```bash
+git add submodule https://github.com/getpelican/pelican-plugins pelican-plugins
+```
+
+In pelicanconf.py set the PLUGIN_PATH variable
+
+```python
+PLUGIN_PATH = 'pelican-plugins'
+PLUGINS = ['sitemap', 'gravatar']
+```
+
+Then push the changes
+
+```bash
+git add pelicanconf.py
+git commit -m"Add pelican plugins"
+git push origin master
+```
+
+You'll now have a sucessful build that has generated your blog exactly the way you want it! Only one thing.. you can't download the output of build from Travis...
 
 Deploy
 ------
