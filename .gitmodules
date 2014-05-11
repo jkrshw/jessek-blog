@@ -1,6 +1,7 @@
 [submodule "pure"]
 	path = pure
 	url = https://github.com/jkrshw/pure.git
+	branch = custom-style
 [submodule "pelican-plugins"]
 	path = pelican-plugins
 	url = https://github.com/getpelican/pelican-plugins
