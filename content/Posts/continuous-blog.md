@@ -7,6 +7,8 @@ In my last [post](http://jessek.co.nz/2014/05/pelican-static-blog.html), I talke
 
 Using make to compile markdown files in to html with a python tool started giving me ideas. The blog's source was already in github and it made sense to move the compilation to an automated tool. Automate everything.
 
+<!-- PELICAN_END_SUMMARY -->
+
 Travis
 ------
 
@@ -25,7 +27,7 @@ install:
 script: make publish
 ```
 
-This script will set up a python 2.7 environment and install the dependencies specified in the requirements.txt file. You may need to generate the requirements.txt file if you don't alreay have one
+This script will set up a python 2.7 environment and install the dependencies specified in the requirements.txt file. You may need to generate the ```requirements.txt``` file if you don't already have one
 
 ```bash
 pip freeze > requirements.txt
@@ -43,15 +45,17 @@ If Travis can't find all of your dependencies the build will Error out and you'l
 
 ```
 Downloading/unpacking argparse==1.2.1 (from -r requirements.txt (line 6))
-Could not find a version that satisfies the requirement argparse==1.2.1 (from -r requirements.txt (line 6)) (from versions: 0.1.0, 0.2.0, 0.3.0, 0.4.0, 0.5.0, 0.6.0, 0.7.0, 0.8.0, 0.9.0, 0.9.1, 1.0.1, 1.0, 1.1)
+Could not find a version that satisfies the requirement argparse==1.2.1 
+(from -r requirements.txt (line 6)) 
+(from versions: 0.1.0, 0.2.0, 0.3.0, 0.4.0, 0.5.0, 0.6.0, 0.7.0, 0.8.0, 0.9.0, 0.9.1, 1.0.1, 1.0, 1.1)
 ```
 
-I was able to pick the latest available version, update the requirements.txt and try again. Such an approach may not work for a more essential library.
+I was able to pick the latest available version of argparse, update the requirements.txt and try again. Such an approach may not work for a more essential library.
 
 Themes
 ------
 
-Once Travis is able to set up the correct dev environment and start running the make script you should run in to your first build failure.
+Once Travis is able to install the correct dev environment and run the make script you should run in to your first build failure.
 
 ```
 ...
@@ -63,15 +67,13 @@ The command "make publish" exited with 2.
 Done. Your build exited with 1.
 ```
 
-Themes are installed from source into the development environment using the command ```pelican-themes```.
-
-Add the theme as a git submodule
+Themes are installed from source into the development environment using the command ```pelican-themes```. Travis automatically initialises and updates git submodules. Add the theme as a git submodule and an additional install command.
 
 ```bash
 git add submodule https://github.com/jkrshw/pure.git pure
 ```
 
-and add the install command to the ```.travis.yml```
+In ```.travis.yml``` add a second install command to run ```pelican-themes```
 
 ```yaml
 language: python
@@ -83,7 +85,7 @@ install:
 script: make publish
 ```
 
-Push the changes and now you should have your first sucessful build!
+Push the changes and now you should have your first successful build!
 
 ```bash
 git add .travis.yml
@@ -94,11 +96,11 @@ git push origin master
 Plugins
 -------
 
-After including the theme, pelican will happily generate html but will not be able to find any plugins
+After including the theme, pelican will happily generate html but will not be able to find any plugins. Surprisingly this doesn't result in a build failure.
 
 ```
 ERROR: Can't find plugin `sitemap`: No module named sitemap
-ERROR: Can't find plugin `gravatar`: No module named gravatar
+ERROR: Can't find plugin `summary`: No module named summary
 Done: Processed 29 articles and 0 pages in 1.84 seconds.
 
 The command "make publish" exited with 0.
@@ -106,17 +108,17 @@ The command "make publish" exited with 0.
 Done. Your build exited with 0.
 ```
 
-Unlike themes, plugins are include via source and a variable in ```pelicanconf.py``` instead of being installed into the dev environment. The approach is still pretty much the same. Add a submodule for the pelican-plugins repo and configure the ```PLUGIN_PATH``` variable.
+Instead of being installed into the development environment, plugins are included via source and a variable in ```pelicanconf.py```. The approach is still pretty much the same as for themes. Add a submodule for the pelican-plugins repo and configure the ```PLUGIN_PATH``` variable.
 
 ```bash
 git add submodule https://github.com/getpelican/pelican-plugins pelican-plugins
 ```
 
-In pelicanconf.py set the PLUGIN_PATH variable
+In ```pelicanconf.py``` set the ```PLUGIN_PATH``` variable
 
 ```python
 PLUGIN_PATH = 'pelican-plugins'
-PLUGINS = ['sitemap', 'gravatar']
+PLUGINS = ['sitemap', 'summary']
 ```
 
 Then push the changes
@@ -132,7 +134,7 @@ You'll now have a successful build that has generated your blog exactly the way 
 Deploy
 ------
 
-Travis has a [multiude](http://docs.travis-ci.com/user/deployment/) of options for deployment, including to [Amazon S3](http://docs.travis-ci.com/user/deployment/s3/). 
+Travis has a [multitude](http://docs.travis-ci.com/user/deployment/) of options for deployment, including to [Amazon S3](http://docs.travis-ci.com/user/deployment/s3/). 
 
 Before getting started with the ```.travis.yml``` configuration, install the Travis [Command Line Client](https://github.com/travis-ci/travis.rb#readme). The Travis client is used to encrypt the AWS secret access key which you'll absolutely want to do if you're using a public github repo.
 
@@ -165,7 +167,7 @@ deploy:
   endpoint: jessek.co.nz.s3-website-ap-southeast-2.amazonaws.com
 ```
 
-After adding the S3 confugration and access key id, use the Travis Client to add the encrypted secret access key. Run the command below and paste the secret key in when prompted for std-in.
+After adding the S3 configuration and access key id, use the Travis Client to add the encrypted secret access key. Run the command below and paste the secret key in when prompted for std-in.
 
 ```bash
 travis encrypt --add deploy.secret_access_key
@@ -193,13 +195,13 @@ deploy:
   endpoint: jessek.co.nz.s3-website-ap-southeast-2.amazonaws.com
 ```
 
-Push the changes to master. After 5 mins your blog should be updated.
+Push the changes to master. After 5 mins your site should be updated.
 
 Why?
 ----
 
-I can't tell if I've made blogging more fun or more like work. The workflow is obviously not as seamless as an online editor such as Blogger. This makes it a little easier, and a lot better than building and uploading manually.
+Mostly I did this for fun and to brush up on some Continuous Delivery tools. I can't tell if I've made blogging more fun or more like work. The workflow is not as seamless as an online editor such as Blogger. This approach makes it a little easier, and a lot better than building and uploading manually.
 
 It's pretty slow too. The environment setup and build takes around 30 seconds and deploying to S3 adds another 4 minutes. I suspect this is because all articles, images and rollups are being re-deployed. Hopefully there is room for optimisation by not deploying artifacts that haven't been changed.
 
-For a blog with a lot of collaborates I think this could be a really cool workflow. Posts, corrections and edits can be submitted by anyone as a pull request and approved by a few select contributors. Using git as a source repo also provides traceability of edits, keeping everyone honest as history rewrites could be picked up by anyone with a clone.
+For a blog with a lot of collaborates I think this could be a really cool workflow. Posts, corrections and edits can be submitted by anyone as a pull request and approved by a contributors with write access to the repo. Using git as a source repo also provides traceability of edits. History rewrites can be picked up by anyone with a clone, keeping the writers honest.
