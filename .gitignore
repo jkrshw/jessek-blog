@@ -5,3 +5,4 @@ include/
 local/
 share/
 *.pyc
+*.pid
