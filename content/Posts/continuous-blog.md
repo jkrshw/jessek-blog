@@ -1,5 +1,5 @@
 Title: Continuous Blogging
-Date: 2014-05-10 09:03
+Date: 2014-05-11 09:03
 Tags: blogging, travis-ci, github, pelican, python
 Slug: continuous-blog
 
