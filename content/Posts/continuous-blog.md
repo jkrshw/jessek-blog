@@ -127,18 +127,18 @@ git commit -m"Add pelican plugins"
 git push origin master
 ```
 
-You'll now have a sucessful build that has generated your blog exactly the way you want it! Only one thing.. you can't download the output of build from Travis.
+You'll now have a successful build that has generated your blog exactly the way you want it! Only one thing.. you can't download the output of build from Travis.
 
 Deploy
 ------
 
 Travis has a [multiude](http://docs.travis-ci.com/user/deployment/) of options for deployment, including to [Amazon S3](http://docs.travis-ci.com/user/deployment/s3/). 
 
-Before getting started with the ```.travis.yml``` configuration, install the Travis [Command Line Client](https://github.com/travis-ci/travis.rb#readme). The Travis client is used to encrypt the AWS secret access key which you'll absolutly want to do if your're using a public github repo.
+Before getting started with the ```.travis.yml``` configuration, install the Travis [Command Line Client](https://github.com/travis-ci/travis.rb#readme). The Travis client is used to encrypt the AWS secret access key which you'll absolutely want to do if you're using a public github repo.
 
-The Travis Client requres Ruby 1.9.3 or greater. I'm running Ubuntu 14.04 and although the system defauly Ruby it says it's Ruby 1.9.3, it doesn't act like it. Even installing Ruby 2.0 from apt-get wont help as 1.9 is still set as the default version.
+The Travis Client requires Ruby 1.9.3 or greater. I'm running Ubuntu 14.04 and although the system default Ruby it says it's Ruby 1.9.3, it doesn't act like it. Even installing Ruby 2.0 from apt-get wont help as 1.9 is still set as the default version.
 
-Fortunatly there's a tool for that. Install [RVM](http://rvm.io/rvm/install) and all your ruby version worries will be over.
+Fortunately there's a tool for that. Install [RVM](http://rvm.io/rvm/install) and all your ruby version worries will be over.
 
 ```bash
 curl -sSL https://get.rvm.io | bash -s stable
@@ -198,8 +198,8 @@ Push the changes to master. After 5 mins your blog should be updated.
 Why?
 ----
 
-I can't tell if I've made blogging more fun or more like work. The workflow is obviously not as seemless as an online editor such as Blogger. This makes it a little easier, and a lot better than building and uploading manually.
+I can't tell if I've made blogging more fun or more like work. The workflow is obviously not as seamless as an online editor such as Blogger. This makes it a little easier, and a lot better than building and uploading manually.
 
-It's pretty slow too. The environment setup and build takes around 30 seconds and deploying to S3 adds another 4 minutes. I suspect this is because all articles, images and rollups are being re-deployed. Hopefully there is room for optimization by not deploying artifacts that haven't been changed.
+It's pretty slow too. The environment setup and build takes around 30 seconds and deploying to S3 adds another 4 minutes. I suspect this is because all articles, images and rollups are being re-deployed. Hopefully there is room for optimisation by not deploying artifacts that haven't been changed.
 
-For a blog with a lot of collaborates I think this could be a really cool workflow. Posts, corrections and edits can be submitted by anyone as a pull request and approved by a few select contributors. Using git as a soure repo also provides tracability of edits, keeping everyone honest as history rewrites could be picked up by anyone with a clone.
+For a blog with a lot of collaborates I think this could be a really cool workflow. Posts, corrections and edits can be submitted by anyone as a pull request and approved by a few select contributors. Using git as a source repo also provides traceability of edits, keeping everyone honest as history rewrites could be picked up by anyone with a clone.
