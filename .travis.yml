@@ -4,6 +4,8 @@ python:
 install:
 - pip install -r requirements.txt
 - pelican-themes -i pure
+- sudo apt-get update
+- sudo apt-get install optipng libjpeg-progs
 script: make publish
 deploy:
   provider: s3

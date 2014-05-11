@@ -41,7 +41,7 @@ MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/index.html'
 
 # Plugins
 PLUGIN_PATH = 'pelican-plugins'
-PLUGINS = ['sitemap', 'summary']
+PLUGINS = ['sitemap', 'summary', 'optimize_images']
 
 SITEMAP = {'format': "xml"}
 
