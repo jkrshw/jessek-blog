@@ -7,7 +7,7 @@ Hello! Welcome to the updated [jessek.co.nz](jessek.co.nz).
 
 [Blogger](www.blogger.com) wasn't really working out. A wysiwyg editor is nice and all but code snippets looked awful and the template was over the top. I wanted something simpler for my blog and something new to try out.
 
-The two options I considered were [jekyll](http://jekyllrb.com/) and [Pelican](http://blog.getpelican.com/). After a moments deliberation I decided to try out Pelican. Pelican is written in Python, with only a little Python experience it sounded fun.
+The two options I considered were [jekyll](http://jekyllrb.com/) and [Pelican](http://blog.getpelican.com/). <!-- PELICAN_END_SUMMARY --> After a moments deliberation I decided to try out Pelican. Pelican is written in Python, with only a little Python experience it sounded fun.
 
 ## Porting
 
