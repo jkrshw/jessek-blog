@@ -9,7 +9,7 @@ As a very privileged white male I knew enough not to dive in suggestion solution
 
 ## So you want to be an ally
 
-Julie Pagano has written a [great post](http://juliepagano.com/blog/2014/05/10/so-you-want-to-be-an-ally/) on how to be an ally. That is, someone not in the opressed minority that wants to see an end to the opression.
+Julie Pagano has written a [great post](http://juliepagano.com/blog/2014/05/10/so-you-want-to-be-an-ally/) on how to be an ally. That is, someone not in the oppressed minority that wants to see an end to the oppression.
 
 Please [read it](http://juliepagano.com/blog/2014/05/10/so-you-want-to-be-an-ally/). Go a head. I'll wait.
 
@@ -17,9 +17,11 @@ That link again: http://juliepagano.com/blog/2014/05/10/so-you-want-to-be-an-all
 
 ## Listening
 
-To be honest I don't have much to add. I think being uncomfortable is a great start. You never learn anything in an echo chamber. If someone's comments on sexism start to make you uncomfortable maybe you shuold reflect on why that is.
+To be honest I don't have much more to add. I think being uncomfortable is a great start. You never learn anything in an echo chamber. If someone's comments on sexism start to make you uncomfortable maybe you should reflect on why that is. You might learn something.
 
-How do you listen? Julie provides a list of users to follow on Twitter. I haven't checked them all out yet, these are a few knowledgeable, funny and awesome people I follow:
+How do you listen? Julie provides a list of people to follow on Twitter. I haven't checked them all out yet but some of them are great.
+
+Here's my list of a few knowledgeable, funny and awesome people I follow. They'll make you uncomfortable, laugh and/or annoy you.
 
 * [Julie Pagano](https://twitter.com/juliepagano)
 * [Ashe Dryden](https://twitter.com/ashedryden)
@@ -28,19 +30,21 @@ How do you listen? Julie provides a list of users to follow on Twitter. I haven'
 * [Mikki Kendall](https://twitter.com/Karnythia)
 * [Marco Rogers](https://twitter.com/polotek)
 * [Linda Sandvik](https://twitter.com/hyper_linda)
-cattr_accessor - @ntlk
-Katrina Owen @kytrinyx
-Line Hollis - @LineHollis
-Stacey Mulcahy - @bitchwhocodes
-Jen Myers - @antiheroine
-Lindsey Bieda - @lindseybieda
-Wil Shipley - @wilshipley
-∀eevees - @eevee
-iller, killer - @hsjuju2
-Caitlin Moran - @caitlinmoran
-Randi Harper - @freebsdgirl
-Devin Faraci - @devincf
-☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ - @jcoglan
-Rachel Myers - @rachelmyers
-Jonas Wisser - @jwisser
-0 but true - @aanand
+* [cattr_accessor](https://twitter.com/ntlk)
+* [Katrina Owen](https://twitter.com/kytrinyx)
+* [Line Hollis](https://twitter.com/LineHollis)
+* [Stacey Mulcahy](https://twitter.com/bitchwhocodes)
+* [Jen Myers](https://twitter.com/antiheroine)
+* [Lindsey Bieda](https://twitter.com/lindseybieda)
+* [Wil Shipley](https://twitter.com/wilshipley)
+* [∀eevees](https://twitter.com/eevee)
+* [iller, killer](https://twitter.com/hsjuju2)
+* [Caitlin Moran](https://twitter.com/caitlinmoran)
+* [Randi Harper](https://twitter.com/freebsdgirl)
+* [Devin Faraci](https://twitter.com/devincf)
+* [☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰](https://twitter.com/jcoglan)
+* [Rachel Myers](https://twitter.com/rachelmyers)
+* [Jonas Wisser](https://twitter.com/jwisser)
+* [0 but true](https://twitter.com/aanand)
+
+There are dozens of awesome locals you can follow too. But they're my friends, find your own!
