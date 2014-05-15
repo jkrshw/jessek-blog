@@ -9,7 +9,7 @@ As a very privileged white male I knew enough not to dive in suggestion solution
 
 ## So you want to be an ally
 
-Julie Pagano has written a [great post](http://juliepagano.com/blog/2014/05/10/so-you-want-to-be-an-ally/) on how to be an ally. That is, someone not in the oppressed minority that wants to see an end to the oppression.
+Julie Pagano has written a [great post](http://juliepagano.com/blog/2014/05/10/so-you-want-to-be-an-ally/) on how to get started as an ally. That is, someone not in the oppressed minority that wants to see an end to the oppression.
 
 Please [read it](http://juliepagano.com/blog/2014/05/10/so-you-want-to-be-an-ally/). Go a head. I'll wait.
 
@@ -17,11 +17,13 @@ That link again: http://juliepagano.com/blog/2014/05/10/so-you-want-to-be-an-all
 
 ## Listening
 
-To be honest I don't have much more to add. I think being uncomfortable is a great start. You never learn anything in an echo chamber. If someone's comments on sexism start to make you uncomfortable maybe you should reflect on why that is. You might learn something.
+To be honest I don't have much more to add. I think listening and being uncomfortable is a great start. You never learn anything in an echo chamber. If someone's comments on sexism start to make you uncomfortable maybe you should reflect on why that is. You might learn something.
 
-How do you listen? Julie provides a list of people to follow on Twitter. I haven't checked them all out yet but some of them are great.
+How do you listen? Julie provides a list of people to follow on Twitter as well as a large list of resources. I haven't checked them all out yet but some of them are great.
 
-Here's my list of a few knowledgeable, funny and awesome people I follow. They'll make you uncomfortable, laugh and/or annoy you.
+## Twitter
+
+I think twitter is pretty cool. Here's my list of a few knowledgeable, funny and awesome people I follow. They'll make you uncomfortable, laugh and/or annoy you. You should follow at least the first 3.
 
 * [Julie Pagano](https://twitter.com/juliepagano)
 * [Ashe Dryden](https://twitter.com/ashedryden)
