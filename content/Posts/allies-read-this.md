@@ -13,7 +13,7 @@ Julie Pagano has written a [great post](http://juliepagano.com/blog/2014/05/10/s
 
 Please [read it](http://juliepagano.com/blog/2014/05/10/so-you-want-to-be-an-ally/). Go a head. I'll wait.
 
-That link again: http://juliepagano.com/blog/2014/05/10/so-you-want-to-be-an-ally/
+That link again: <http://juliepagano.com/blog/2014/05/10/so-you-want-to-be-an-ally/>
 
 ## Listening
 
