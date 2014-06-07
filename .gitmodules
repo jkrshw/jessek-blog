@@ -4,4 +4,5 @@
 	branch = custom-style
 [submodule "pelican-plugins"]
 	path = pelican-plugins
-	url = https://github.com/getpelican/pelican-plugins
+	url = https://github.com/jkrshw/pelican-plugins.git
+	branch = custom-plugins
