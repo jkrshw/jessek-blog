@@ -2,6 +2,7 @@ Title: Contributing to OSS
 Date: 2014-07-08 09:13
 Tags: oss, community
 Slug: contributing-to-oss
+status: draft
 
 I've been a fan of Open Source Software for a long time. Free stuff built by smart people sounds like an awesome idea. My friends, family and anyone foolish enough to ask for tech support from me invariably ends up with Ubuntu installed. They may complain about not being able to install x, y or z, but they're virus free and I've yet to see a real case where they couldn't be as productive with Ubuntu as they could with Windows.
 
