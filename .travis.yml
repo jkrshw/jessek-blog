@@ -18,3 +18,4 @@ deploy:
   bucket: jessek.co.nz
   region: ap-southeast-2
   endpoint: jessek.co.nz.s3-website-ap-southeast-2.amazonaws.com
+  detect_encoding: true
