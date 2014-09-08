@@ -67,7 +67,7 @@ The command "make publish" exited with 2.
 Done. Your build exited with 1.
 ```
 
-Themes are installed from source into the development environment using the command ```pelican-themes```. Travis automatically initialises and updates git submodules. Add the theme as a git submodule and an additional install command.
+Themes are installed from source into the development environment using the command ```pelican-themes```. Add your theme as a git submodule and an additional install command. Travis will automatically initialise and update the git submodules. 
 
 ```bash
 git add submodule https://github.com/jkrshw/pure.git pure
@@ -108,7 +108,7 @@ The command "make publish" exited with 0.
 Done. Your build exited with 0.
 ```
 
-Instead of being installed into the development environment, plugins are included via source and a variable in ```pelicanconf.py```. The approach is still pretty much the same as for themes. Add a submodule for the pelican-plugins repo and configure the ```PLUGIN_PATH``` variable.
+Pelican plugins are included via source and a variable in ```pelicanconf.py```. The approach is pretty much the same as for themes. Add a submodule for the pelican-plugins repo and configure the ```PLUGIN_PATH``` variable.
 
 ```bash
 git add submodule https://github.com/getpelican/pelican-plugins pelican-plugins
@@ -140,9 +140,7 @@ Travis has a [multitude](http://docs.travis-ci.com/user/deployment/) of options 
 
 Before getting started with the ```.travis.yml``` configuration, install the Travis [Command Line Client](https://github.com/travis-ci/travis.rb#readme). The Travis client is used to encrypt the AWS secret access key which you'll absolutely want to do if you're using a public github repo.
 
-The Travis Client requires Ruby 1.9.3 or greater. I'm running Ubuntu 14.04 and although the system default Ruby it says it's Ruby 1.9.3, it doesn't act like it. Even installing Ruby 2.0 from apt-get wont help as 1.9 is still set as the default version.
-
-Fortunately there's a tool for that. Install [RVM](http://rvm.io/rvm/install) and all your ruby version worries will be over.
+The Travis Client requires Ruby 1.9.3 or greater. Pick your favouriate Ruby version managment tool to get the necesssary version. I'm using [RVM](http://rvm.io/rvm/install) and Ruby 2.1.
 
 ```bash
 curl -sSL https://get.rvm.io | bash -s stable
