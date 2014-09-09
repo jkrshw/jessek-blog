@@ -4,14 +4,16 @@ Tags: pelican, blog, performance
 Slug: continuous-blogging-pt2
 status: draft
 
-It's been a while since I moved my blog to Pelican + Gihub + Travis + S3. As an introduction to pulic speaking I'm going to give a lighting talk at the [Auckland Continuous Delivery](http://www.meetup.com/Auckland-Continuous-Delivery/events/170237202/) meetup and there were a few things I wanted to get sorted before I did.
+It's been a while since I moved my blog to Pelican + Github + Travis + S3. At the risk of only blogging about how I build this blog, I thought I'd do a follow up post to [Continous Blogging](|filename|/Posts/continuous-blog.md). 
+
+I'm going to give a lighting talk at the [Auckland Continuous Delivery](http://www.meetup.com/Auckland-Continuous-Delivery/events/170237202/) meetup and there were a few improvements I wanted to get done before the talk.
 
 Asset Management
 ----------------
 
 The theme I use doesn't rely on a lot of assets but when content is static, why not squeeze every bit of optimatization out?
 
-The [webassets](http://docs.getpelican.com/en/3.1.1/plugins.html#asset-management) plugin provides filters for truncating and minifing css and js assets.
+The [webassets](http://docs.getpelican.com/en/3.1.1/plugins.html#asset-management) plugin provides filters for concatentating and minifing css and js assets.
 
 To install, add the ```assets``` plugin to ```PLUGINS``` list in ```pelicancont.py``` and install the required dependenencies. I used [cssmin](https://pypi.python.org/pypi/cssmin/0.2.0) for css and [Google's Closure](https://developers.google.com/closure/) for Javascript:
 
@@ -32,6 +34,13 @@ Use the assets tag in templates to apply filters to one or more resources to gen
 {% assets filters="closure_js", output="js/packed.js", "js/scroll.js" %}
     <script src="{{ SITEURL }}/{{ ASSET_URL }}"></script>
 {% endassets %}
+```
+
+Depending on the amount of css and javascript used in your theme, this will drop a few requests from each page load and reduce a bit of whitepsace from the downloads. The ```ASSET_URL``` variable takes care of caching by adding a small hash to the end of the src url.
+
+```html
+<link rel="stylesheet" href="./theme/css/theme.min.css?23675065">
+<script src="./theme/js/packed.js?5c1654cd"></script>
 ```
 
 GZIP Compression
@@ -82,6 +91,6 @@ original    gzip
 Caching
 -------
 
-The last major improvement I need to figure out is fixing the cache invalidation. Amazon seems pretty good at setting cache headers, but Travis does a full upload each build which causes S3 to invalidate all the cache headers.
+The last major improvement I need to figure out is fixing the cache invalidation. Amazon seems pretty good at setting cache headers, but Travis does a full upload each build which causes S3 to invalidate all the cache headers even if a file hasn't changed.
 
-Syncing on change is a more demanding build time process as it requires checking each existing file, but I think the benefits tot he end user will be pretty great as half the site's content won't change often!
+Syncing on change is a more demanding build time process as it requires checking each existing file. I believe the reuduction in false misses will be worth it. Even if just for the cover image.
