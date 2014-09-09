@@ -1,4 +1,4 @@
-Title: Pelican Blogging Improvements
+Title: Continuous Blogging Pt II
 Date: 2014-09-07 17:47
 Tags: pelican, blog, performance
 Slug: continuous-blogging-pt2
@@ -91,6 +91,18 @@ original    gzip
 Caching
 -------
 
-The last major improvement I need to figure out is fixing the cache invalidation. Amazon seems pretty good at setting cache headers, but Travis does a full upload each build which causes S3 to invalidate all the cache headers even if a file hasn't changed.
+The Travis S3 deployer performs a full upload of the output folder each deploy. It does not handle deletions or detect unchanged files.
 
-Syncing on change is a more demanding build time process as it requires checking each existing file. I believe the reuduction in false misses will be worth it. Even if just for the cover image.
+Since the images account for 50% of the content by size, and are the less likely to change it would be nice not to reupload them each deploy.
+
+Pondering this for a while I considered skipping the native S3 deployer and using a script to use Amazon's s3cmd tool which is able to sync file systems.
+
+Not only did that sound like too much work, I wasn't keen on forgoing the native support provided by Travis. Then a much simpler idea came to mind. 
+
+It would be simple enough to create a file containing the hash of each image and before deploying, remove unchanged files from output. Since Travis doesn't do a delete, the images will be left unchanged in the bucket.
+
+I liked this idea a lot. Since this is a Pelican project I thought I'd have a go at scripting the simple sync in Python. I cheated a little (a lot) by using system calls to md5sum and wget to do the hard work of calculating the hashes and retrieving the old hashes. Then it was a simple matter of reading the two files, looking for unchanged hashes and deleting them from the output folder.
+
+You can see the script in the [blog repository](https://github.com/jkrshw/jessek-blog/blob/master/deploy/simple-sync.py). Go easy on it, it's my first hack at Python. 
+
+This little script solves the biggest bugbear with the blog. The flicker of the home page each time I visit it after an update as the cover image is downloaded.
