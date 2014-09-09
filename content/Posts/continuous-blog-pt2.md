@@ -1,21 +1,20 @@
 Title: Continuous Blogging Pt II
-Date: 2014-09-07 17:47
+Date: 2014-09-09 17:47
 Tags: pelican, blog, performance
 Slug: continuous-blogging-pt2
-status: draft
 
 It's been a while since I moved my blog to Pelican + Github + Travis + S3. At the risk of only blogging about how I build this blog, I thought I'd do a follow up post to [Continous Blogging](|filename|/Posts/continuous-blog.md). 
 
-I'm going to give a lighting talk at the [Auckland Continuous Delivery](http://www.meetup.com/Auckland-Continuous-Delivery/events/170237202/) meetup and there were a few improvements I wanted to get done before the talk.
+I'm going to give a lighting talk at the [Auckland Continuous Delivery](http://www.meetup.com/Auckland-Continuous-Delivery/events/170237202/) meetup on how I build the blog and there were a few improvements I wanted to get done before the talk. Here's what I did to improve the site's performance.
+
+<!-- PELICAN_END_SUMMARY -->
 
 Asset Management
 ----------------
 
-The theme I use doesn't rely on a lot of assets but when content is static, why not squeeze every bit of optimatization out?
+The [webassets](http://docs.getpelican.com/en/3.1.1/plugins.html#asset-management) plugin provides filters for concatentating and minifing css and js assets. This reduces the size and number of web requests during page load.
 
-The [webassets](http://docs.getpelican.com/en/3.1.1/plugins.html#asset-management) plugin provides filters for concatentating and minifing css and js assets.
-
-To install, add the ```assets``` plugin to ```PLUGINS``` list in ```pelicancont.py``` and install the required dependenencies. I used [cssmin](https://pypi.python.org/pypi/cssmin/0.2.0) for css and [Google's Closure](https://developers.google.com/closure/) for Javascript:
+To install, add the ```assets``` plugin to ```PLUGINS``` list in ```pelicancont.py``` and install the required dependenencies. I used [cssmin](https://pypi.python.org/pypi/cssmin/0.2.0) for css and Google's [Closure](https://developers.google.com/closure/) for Javascript:
 
 ```bash
 pip install cssmin closure
@@ -46,17 +45,17 @@ Depending on the amount of css and javascript used in your theme, this will drop
 GZIP Compression
 ----------------
 
-GZIP compression was the improvement I most wanted to add the to the site's build chain. The content is largly html, which compresses quite nicely. Optimized images and minified css will drop a few K but are unlikely to make a big difference. 
+GZIP compression was the improvement I most wanted to add the to the site's build chain. The content is largly html, which compresses quite nicely. Optimized images and minified css will drop a few K but are unlikely to make a big difference to percieved performance. 
 
-First time around it felt too hard, and possibly impossible with the Travis S3 deployer. In order for S3 to correctly serve an html page that has been compressed, the Content-Encoding metadata for the file has be set correctly. Thanks to the new option [```detect_encoding: true```](https://github.com/travis-ci/travis-ci/issues/2400) it is possible for Travis to guess and set the Encoding type of a file.
+First time around it felt too hard, and possibly impossible with the Travis S3 deployer. In order for S3 to correctly serve an html page that has been compressed, the Content-Encoding metadata for the file has to be set correctly. Thanks to the new option [```detect_encoding: true```](https://github.com/travis-ci/travis-ci/issues/2400) it is possible for Travis to guess and set the Encoding type of a file.
 
 ![S3 Content Encoding](|filename|/images/s3-content-encoding.png)
 
-The gzip_cache plugin compresses content into a ``.gz`` file along side the original file. Some web servers (e.g. Ngnix) are able to use the ``.gz`` files as a cache and do not need to perform real time compression.
+The [gzip_cache](https://github.com/getpelican/pelican-plugins/tree/master/gzip_cache) plugin compresses content into a ``.gz`` file along side the original file. Some web servers (e.g. Ngnix) are able to use the ``.gz`` files as a cache and do not need to perform real time compression.
 
 Since I'm not using Ngnix (the whole point is to have no moving parts), this plugin wasn't quite going to do. But with a [few modiciations](https://github.com/getpelican/pelican-plugins/pull/298/commits) I was able to have it overwrite the originals, keeping the file name intact.
 
-The results were quite impressive on paper. The file size of the index page halved from 8K to 4K. The overal reduction in all content was from 4.4M down to 3.4M and that includes 2.5M of images that didn't change. Excluding images that is around a 50% reduction in size with no noticable increase in build time.
+The results were quite impressive on paper. The file size of the index page halved from 8K to 4K. The overal reduction in size of all content was from 4.4M down to 3.4M and that includes 2.5M of images that didn't change. Excluding images that is around a 50% reduction in size with no noticable increase in build time.
 
 ```
 original    gzip    
@@ -91,18 +90,41 @@ original    gzip
 Caching
 -------
 
-The Travis S3 deployer performs a full upload of the output folder each deploy. It does not handle deletions or detect unchanged files.
+The Travis S3 deployer performs a full upload of the output folder each deploy. It does not handle deletions or detect unchanged files. So on each upload, every file is marked as being modified.
 
 Since the images account for 50% of the content by size, and are the less likely to change it would be nice not to reupload them each deploy.
 
-Pondering this for a while I considered skipping the native S3 deployer and using a script to use Amazon's s3cmd tool which is able to sync file systems.
+I decided it would be simple enough to create a file containing the hash of each image and upload it to the blog. Before deploying, compare the current hashes with the hashes downloaded from the live site and remove unchanged files from the output directory.  New and modified files will be uploaded and since Travis doesn't delete files from S3, the removed images will be left unchanged in the bucket.
 
-Not only did that sound like too much work, I wasn't keen on forgoing the native support provided by Travis. Then a much simpler idea came to mind. 
+Since this is a Pelican project I thought I'd have a go at scripting this simple sync algorithm in Python. I cheated a little (a lot) by using system calls to ```md5sum``` and ```wget``` to do the hard work of calculating the hashes and retrieving the old hashes from the live site and borrowed a few lines of code from [stackoverflow](http://stackoverflow.com/questions/4803999/python-file-to-dictionary) to read in the output. Then it was a simple matter of looking for unchanged hashes and deleting them from the output folder.
 
-It would be simple enough to create a file containing the hash of each image and before deploying, remove unchanged files from output. Since Travis doesn't do a delete, the images will be left unchanged in the bucket.
+```python
+import os
+def read_hash(filename):
+    with open(filename) as f:
+        return dict([line.split() for line in f])
 
-I liked this idea a lot. Since this is a Pelican project I thought I'd have a go at scripting the simple sync in Python. I cheated a little (a lot) by using system calls to md5sum and wget to do the hard work of calculating the hashes and retrieving the old hashes. Then it was a simple matter of reading the two files, looking for unchanged hashes and deleting them from the output folder.
+#########  main program ###########
+os.system("wget -q -O old_images.md5 http://jessek.co.nz/images.md5")
+os.system("md5sum output/images/* > output/images.md5")
 
-You can see the script in the [blog repository](https://github.com/jkrshw/jessek-blog/blob/master/deploy/simple-sync.py). Go easy on it, it's my first hack at Python. 
+new_hashes = read_hash("output/images.md5")
+old_hashes = read_hash("old_images.md5")
 
-This little script solves the biggest bugbear with the blog. The flicker of the home page each time I visit it after an update as the cover image is downloaded.
+for key in new_hashes.viewkeys() & old_hashes.viewkeys():
+    print 'removing unchanged file %s' % new_hashes[key]
+    os.remove(new_hashes[key])
+```
+
+That's it. You can see the full script in the [blog repository](https://github.com/jkrshw/jessek-blog/blob/master/deploy/simple-sync.py). Go easy on it, it's my first hack at Python. 
+
+The script is invoked before the deploy by adding a ```before_deploy``` command to ```.travis.yml```
+
+```yml
+before_deploy: deploy/simple-sync.py
+deploy:
+  provider: s3
+  ...
+```
+
+This little script solves the biggest bugbear with the blog. The flicker of the home page as the cover image is downloaded each time I visit the site after an update. Now that I'm mostly happy with the build maybe I'll have to think of some actual content to write..
