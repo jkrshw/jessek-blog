@@ -8,7 +8,7 @@ install:
 - sudo apt-get update
 - sudo apt-get install optipng libjpeg-progs wget coreutils
 script: make publish
-before_deploy: cd output && ../deploy/simple-sync.py
+before_deploy: deploy/simple-sync.py
 deploy:
   provider: s3
   access_key_id: AKIAICC7Z3GSB5QRCTKA
