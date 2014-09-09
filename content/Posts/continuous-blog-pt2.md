@@ -3,7 +3,7 @@ Date: 2014-09-09 17:47
 Tags: pelican, blog, performance
 Slug: continuous-blogging-pt2
 
-It's been a while since I moved my blog to Pelican + Github + Travis + S3. At the risk of only blogging about how I build this blog, I thought I'd do a follow up post to [Continous Blogging](|filename|/Posts/continuous-blog.md). 
+It's been a while since I moved my blog to Pelican + Github + Travis + S3. At the risk of only blogging about how I build this blog, I thought I'd do a follow up post to [Continuos Blogging](|filename|/Posts/continuous-blog.md). 
 
 I'm going to give a lighting talk at the [Auckland Continuous Delivery](http://www.meetup.com/Auckland-Continuous-Delivery/events/170237202/) meetup on how I build the blog and there were a few improvements I wanted to get done before the talk. Here's what I did to improve the site's performance.
 
