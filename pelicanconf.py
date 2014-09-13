@@ -48,3 +48,5 @@ SITEMAP = {'format': "xml"}
 # Theme
 THEME = "pure"
 COVER_IMG_URL = "/images/cover.jpg"
+TRAVIS_CI = "https://travis-ci.org/jkrshw/jessek-blog"
+TRAVIS_CI_BRANCH = "master"
