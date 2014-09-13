@@ -3,7 +3,7 @@ Date: 2014-05-14 10:20
 Tags: ally, tech
 Slug: allies-read-this
 
-A problem that has taken my interest of late is sexism in the tech industry. There is no doubt the problem exists. The solution isn't out of reach but it is hard. Very hard.
+A problem that I have recently started to become aware of is sexism in the tech industry. It was quite a rude awakening, I no longer existed in a naive bubble where merit was rewarded above all else. There is no doubt the problem exists. The solution isn't out of reach but it is hard. Very hard.
 
 As a very privileged white male I knew enough not to dive in suggestion solutions. I've been listening to a lot of great people. Experts in this area that can offer a lot more than myself.
 
