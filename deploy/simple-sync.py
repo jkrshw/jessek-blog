@@ -1,25 +1,28 @@
 #!/usr/bin/python
 
 '''
-Check for differences between the hashes in images.md5 and old_images.md5
-and delete the unmodified files so they are not uploaded to S3.
+Check for differences between the hashes in HASH_FILE and SITE_URL/HASH_FILE
+and delete the unmodified files from the output directory.
 
-uses md5sum to generate hashes
+requires wget, find and md5sum to be installed
 '''
 import os
 
-# read in the hash file. Keyed by hash
+HASH_FILE = "site.md5"
+SITE_URL = "http://jessek.co.nz"
+
+# read in the hash file as a set of tuples (hash, filename)
 def read_hash(filename):
     with open(filename) as f:
-        return dict([line.split() for line in f])
+        return { tuple(line.split()) for line in f }
 
 #########  main program ###########
-os.system("wget -q -O old_images.md5 http://jessek.co.nz/images.md5")
-os.system("md5sum output/images/* > output/images.md5")
+os.system("wget -q -O old_%s %s/%s" % (HASH_FILE, SITE_URL, HASH_FILE))
+os.system("find output -type f -exec md5sum {} \; > output/%s" % HASH_FILE)
 
-new_hashes = read_hash("output/images.md5")
-old_hashes = read_hash("old_images.md5")
+new_hashes = read_hash("output/%s" % HASH_FILE)
+old_hashes = read_hash("old_%s" % HASH_FILE)
 
-for key in new_hashes.viewkeys() & old_hashes.viewkeys():
-    print 'removing unchanged file %s' % new_hashes[key]
-    os.remove(new_hashes[key])
+for key in new_hashes & old_hashes:
+    print 'removing unchanged file [md5 %s] %s' % key
+    os.remove(key[1])
