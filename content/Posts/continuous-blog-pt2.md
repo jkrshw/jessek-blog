@@ -128,3 +128,5 @@ deploy:
 ```
 
 This little script solves the biggest bugbear with the blog. The flicker of the home page as the cover image is downloaded each time I visit the site after an update. Now that I'm mostly happy with the build maybe I'll have to think of some actual content to write...
+
+_Update: After tinkering a bit more with the simple-sync script I extended it to check all files in the output directory for changes. I also hardended it a little against edge cases where I might have two files with the same md5 hash in different directories. See the [source](https://github.com/jkrshw/jessek-blog/blob/master/deploy/simple-sync.py) for changes_
