@@ -51,6 +51,30 @@ In Java 7 (yes we're still on 7) there are two main choices for the major GC alg
 
 As an application responding to web requests to serve content, the CMS collector with shorter pauses was chosen.
 
+Tuning
+------
+
+Unfortunately, the tuning was more an art than a science. The project had more pressing performance issues that meant GC optimisation was secondary and getting it good enough, was well, good enough.
+
+Most of the improvements were achieved through reducing the heap size and removing some of the more aggressive options. 
+
+    -Xms16g -Xmx16g
+
+Setting the max and min heap sizes to the same amount avoids the ramp up cost of Java gradually increasing the heap size after each collection. 16g still seemed like too much for the app but the allocation rate was so high we stuck with it to avoid too many Full GCs.
+
+    -XX:NewSize=6g -XX:MaxNewSize=6g
+
+Given the high allocation rate, we experimented with a large new gen. The theory being that objects would be quickly discarded as requests were completed and prematurely promoting objects to the old gen would incur a performance cost. Avoid a new gen that is the same size as the old gen, i.e. `-XX:NewRatio=1` as this will cause the GC to freak out on occasion as it doesn't think it will be able to promote all of the live objects from the new to old gen during the minor GC and does a full GC instead.
+
+    -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly
+
+The IOC is the level at which the JVM will trigger a full GC. Setting this to a known good level avoids the ramp up cost of the JVM trying to find the optimal level. You can find the right value through experimentation.
+
+Conclusion
+----------
+
+Hopefully you never have to delve into the depths of Java Garbage collection. If you do, read the links below, they helped me make some sense of it!
+
 Resources
 ---------
 
