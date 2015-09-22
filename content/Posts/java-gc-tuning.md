@@ -21,10 +21,13 @@ Capturing metrics is incredibly important for performance tuning and general mon
 I had success for these options, although I found some produced output that was not compatible with HP JMeter.
 
     -Xloggc:gc-`date +"%m-%d-%y-%T"`.log # output to file gc-date-time.log
-    -XX:+PrintGCDateStamps # Include pretty date-time in gc logs. Useful for analysis over time so anomalies can be compared to real world
-events.
-    -XX:+PrintGCDetails # Print additional GC details. Cannot be used with HP Jmeter.
-    -XX:+PrintTenuringDistribution # Print details of young gen and old gen tenure. Cannot be used with HP Jmeter.
+    -XX:+PrintGCDateStamps               # Include pretty date-time in gc logs. Useful for
+                                           analysis over time so anomalies can be compared 
+                                           to real world events.
+    -XX:+PrintGCDetails                  # Print additional GC details. Cannot be used 
+                                           with HP Jmeter.
+    -XX:+PrintTenuringDistribution       # Print details of young gen and old gen tenure.
+                                           Cannot be used with HP Jmeter.
 
 Heap Spaces
 -----------
@@ -47,3 +50,15 @@ Given the different nature of objects in the young gen vs the old gen space, it 
 In Java 7 (yes we're still on 7) there are two main choices for the major GC algorithm. Concurrent Mark Sweep (CMS) and the Throughput Collector. CMS performs most of it's work in the background so it's often used for applications where pauses times are to be minimised, however it performs slower overal. The throughput collector will do it's work in a stop the world event which results in longer pauses but overall less than the CMS, so it's good for situations where overall throughput is desirable such as long running calculations.
 
 As an application repsonding to web requests to serve content, the CMS collector with shorter pauses was chosen.
+
+Resources
+---------
+
+* On Java Garbage Collection Analysis & Tuning. Good Explanation of GC options and tuning <http://anthonyfisk.blogspot.co.nz/2014/06/on-java-garbage-collection-analysis.html>
+* How to Monitor Java GC <http://www.cubrid.org/blog/dev-platform/how-to-monitor-java-garbage-collection/>
+* How to Tune Java GC <http://www.cubrid.org/blog/dev-platform/how-to-tune-java-garbage-collection/>
+* Performance Tuning Guide <http://docs.oracle.com/cd/E19900-01/819-4742/abeik/index.html>
+* Analyzing the Performance Impact of Memory Utilization <http://javabook.compuware.com/content/memory/analyzing-java-memory.aspx>
+* Java GC options Cheat Sheet <http://blog.ragozin.info/2011/09/hotspot-jvm-garbage-collection-options.html>
+* JVM Hotspot flags <https://weblogs.java.net/blog/kcpeppe/archive/2013/12/11/case-study-jvm-hotspot-flags>
+* Small frequent GCs are good <http://stackoverflow.com/questions/14340123/large-newsize-of-java-heap-make-process-unresposive-for-long-time>
