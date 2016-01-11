@@ -17,7 +17,7 @@ Around this time last year I saw a tweet from [@anildash](https://twitter.com/an
 
 The idea being, it's easy to remember the failures throughout the year and let the good things slip by. For me it was about self confidence and an increased willingness to praise myself for small achievements.
 
-Here are my 2015 achivements with a bit of added commentary:
+Here are my 2015 achievements with a bit of added commentary:
 
 	Jan 5
 	Tracked down a jQuery annoyance and developed a solution.
@@ -42,7 +42,7 @@ Boring but an achievement none the less. If you fuck up doing your taxes you'll 
 	Feb 18
 	Fixed issue within hour, in time for prod release
 
-	Reb 28
+	Feb 28
 	Rank SEM in CS:GO
 
 	March 18
@@ -76,7 +76,7 @@ I'm on a boat! Well kind of. For most of May and June my girlfriend and I were t
 	July 1
 	Accepted for position as contractor at a digital agency
 
-Applying for jobs is hard work and each job application is an achievemnt in it's own right. I went through the usual channels of putting my CV on a jobs site and I'd seen someone tweet the CERN job while we were on holiday so I applied for that as well.
+Applying for jobs is hard work and each job application is an achievement in it's own right. I went through the usual channels of putting my CV on a jobs site and I'd seen someone tweet the CERN job while we were on holiday so I applied for that as well.
 
 I was quite excited about an interview with a start up photo sharing site. After a disastrous technical interview I was not offered the role and took up the contracting position. It wasn't my dream job but as a contractor I could cash in while keeping a lookout for something better.
 
@@ -88,7 +88,7 @@ Looking for ways to make my job more interesting, I started writing a few python
 	July 26
 	Celebrated 2 years with Rachel by moving house. Successfully drove in London.
 
-What better way to celebrate spending 2 years with someone than to move house. This was an incredibly stressful day. Foolishly only booking the zip car van for 2 hours meant we were rushing the whole time, and when you rush everything that could go wrong does go wrong! We made it in the end, returning the van only 5 minutes late. We would have a make up annivessary dinner on a Thames boat cruise later that week.
+What better way to celebrate spending 2 years with someone than to move house. This was an incredibly stressful day. Foolishly only booking the zipcar van for 2 hours meant we were rushing the whole time, and when you rush everything that could go wrong does go wrong! We made it in the end, returning the van only 5 minutes late. We would have a make up anniversary dinner on a Thames boat cruise later that week.
 
 	August 14
 	Implemented dynamic text replacement tag. Received a "Nice work" from dubious coworker
@@ -156,6 +156,6 @@ It was a busy time between quitting and my last day. There were a lot of release
 
 For 2016 I hope to continue making the most of all opportunities presented to me. CERN is a great place to work so far and I'm looking forward to a year of hard work and constant learning. 
 
-I will continue to keep a list of victories but will focus more on non work related achivements.
+I will continue to keep a list of victories but will focus more on non work related achievements.
 
 As for Counter Strike, I made it up to "Master Guardian Elite" before the ranking system was changed, ending at "Master Guardian I".
