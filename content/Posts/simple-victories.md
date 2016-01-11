@@ -55,7 +55,7 @@ Boring but an achievement none the less. If you fuck up doing your taxes you'll 
 
 The theme with the first few months of 2015 was work and Counter Strike. 
 
-Working on an application so close to prod was quite new to me, having spent the last few years in product teams that were quite removed from the people handling the day to day operations and implementations. Fixing bugs _before_ they come an issue in prod is immensely satisfying and often goes unacknowledged (or overshadowed by the bugs you didn't catch).
+Working on an application so close to prod was quite new to me, having spent the last few years in product teams that were quite removed from the people handling the day to day operations and implementations. Fixing bugs _before_ they become an issue in prod is immensely satisfying and often goes unacknowledged (or overshadowed by the bugs you didn't catch).
 
 My contract ended May 1 and on May 4th we were off to the USA:
 
@@ -77,9 +77,9 @@ I'm on a boat! Well kind of. For most of May and June my girlfriend and I were t
 	July 1
 	Accepted for position as contractor at a digital agency
 
-Applying for jobs is hard work and each job application is an achievement in it's own right. I went through the usual channels of putting my CV on a jobs site and I'd seen someone tweet the CERN job while we were on holiday so I applied for that as well.
+Applying for jobs is hard work and each job application is an achievement in its own right. I went through the usual channels of putting my CV on a jobs site and I'd seen someone tweet the CERN job while we were on holiday so I applied for that as well.
 
-I was quite excited about an interview with a start up photo sharing site. After a disastrous technical interview I was not offered the role and took up the contracting position. It wasn't my dream job but as a contractor I could cash in while keeping a lookout for something better.
+I was quite excited about an interview with a start up photo sharing site. After a disastrous technical interview (that involved whiteboard coding) I was not offered the role and took up the contracting position. It wasn't my dream job but as a contractor I could cash in while keeping a lookout for something better.
 
 	July 20
 	Created Python script to generate sling mappings
@@ -107,7 +107,7 @@ Remember that job I applied for in June? They finally got around to selecting ca
 	September 10
 	Fix verified in prod for Indonesian authorisation issue
 
-Indonesia changed its locale a few years ago and to maintain backwards compatibility, Java has special handling for its locale. In the Javadocs you can read about the side effects and it tells you what not do. Yea, we were doing that and it didn't work.
+The language code Indonesia changed a few years ago and to maintain backwards compatibility, Java has special handling for the locale. In the Javadocs you can read about the side effects and it tells you what not do. Yea, we were doing that and it didn't work.
 
 	September 15
 	Short listed for CERN job
@@ -115,7 +115,9 @@ Indonesia changed its locale a few years ago and to maintain backwards compatibi
 	September 30
 	Verbal offer for CERN job
 
-After an online test and a pre-recorded video interview I flew to Geneva, Switzerland for a day long in person interview with 6 other candidates at CERN. I wasn't feeling very confident afterwards but a few days later they called to say they liked me and wanted to know if I was interested in the job. They'd like to make me an offer! 
+After an online test and a pre-recorded video interview I flew to Geneva, Switzerland for a day long in person interview with 6 other candidates at CERN. 
+
+The day had gone OK, there was no whiteboard coding although we did have to do some paper coding. I wasn't feeling very confident afterwards as I felt the panel interview could have gone better. A few days later they called to say they liked me and wanted to know if I was interested in the job. They thought I did particularly well in the panel interview (hah) and they'd like to make me an offer! 
 
 	October 9
 	Scored for Wapping 8s. Won 4-2
