@@ -2,7 +2,6 @@ Title: Simple Victories
 Date: 2016-01-10 18:57
 Tags: personal, cern
 Slug: simple-victories
-status: draft
 
 Around this time last year I saw a tweet from [@anildash](https://twitter.com/anildash)
 
