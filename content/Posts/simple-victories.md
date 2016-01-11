@@ -4,9 +4,16 @@ Tags: personal, cern
 Slug: simple-victories
 status: draft
 
-Around this time last year I saw a tweet from @anildash 
+Around this time last year I saw a tweet from [@anildash](https://twitter.com/anildash)
 
->> The absolute best thing I've done for the past few years is keeping a simple list of personal victories (small or large) for each year.
+<blockquote class="twitter-tweet"
+  data-link-color="#55acee" align="center" lang="en">
+<p lang="en">The absolute best thing I've done for the past few years is keeping a simple list of personal victories (small or large) for each year.</p>
+— Anil Dash (@anildash)
+<a href="https://twitter.com/anildash/status/551208057452371970">
+  3 Jan 2015
+</a>
+</blockquote>
 
 The idea being it's easy to remember the failures throughout the year and let the good things slip by. For me it was about self confidence and an increased willingness to praise myself for small achievements.
 
@@ -145,6 +152,6 @@ Having only been with the agency for a few months I'd already become a valuable 
 
 It was a busy time between quitting and my last day. There were a lot of releases to support and a dev team in Colombia to bring up to speed. On the 18th of December I finished work for the year and spent the week enjoying the best London at Christmas time has to offer. Spent Christmas with family and friends and then packed up my stuff and moved to Geneva.
 
-For 2016 I hope to continue making the most of all opportunities presented to me. CERN looks like a great place to work and I'm looking forward to a year of hard work and constant learning.
+For 2016 I hope to continue making the most of all opportunities presented to me. CERN looks like a great place to work and I'm looking forward to a year of hard work and constant learning. I will continue to keep a list of victories but will focus more on non work related achivements.
 
 As for Counter Strike, I made it up to "Master Guardian Elite" before the ranking system was changed, ending at "Master Guardian I".
