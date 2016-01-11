@@ -15,14 +15,16 @@ Around this time last year I saw a tweet from [@anildash](https://twitter.com/an
 </a>
 </blockquote>
 
-The idea being it's easy to remember the failures throughout the year and let the good things slip by. For me it was about self confidence and an increased willingness to praise myself for small achievements.
+The idea being, it's easy to remember the failures throughout the year and let the good things slip by. For me it was about self confidence and an increased willingness to praise myself for small achievements.
 
-For context, 2015 was a year of big change. I had just left my job of 3 and a half years to take up a short term contract before leaving NZ to find work in the UK. My new role was working on the Adobe CMS CQ/AEM. 
+Here are my 2015 achivements with a bit of added commentary:
 
 	Jan 5
 	Tracked down a jQuery annoyance and developed a solution.
 
-We had an issue where in edit mode the CMS would not load certain widgets. It turns out the editing components included their own version of jQuery loaded after the version the custom widgets were included in. 
+For context, 2015 was a year of big change. I had just left my job of 3 and a half years to take up a short term contract before leaving NZ to find work in the UK. My new role was working on the Adobe CMS CQ/AEM. 
+
+This was my first week on the job and we had an issue where in edit mode the CMS would not load certain widgets. It turns out the editing components included their own version of jQuery loaded after the version the custom widgets were included in. 
 
 	Jan 16
 	Rode to work and back every day
@@ -35,7 +37,7 @@ For a long time I had been saying I would ride to work but always ended up takin
 Boring but an achievement none the less. If you fuck up doing your taxes you'll regret it later!
 
 	Jan 30
-	Fixed osgi issue communicating between two TVNZ bundles. Unblocked performance improvements.
+	Fixed osgi issue communicating between two bundles. Unblocked performance improvements.
 
 	Feb 18
 	Fixed issue within hour, in time for prod release
@@ -50,14 +52,16 @@ Boring but an achievement none the less. If you fuck up doing your taxes you'll 
 	Successful demo video processing using camel
 	CS GO Nova 1
 
-The theme with the first few months of 2015 was work and Counter Strike. Fixing bugs _before_ they come an issue in prod is immensely satisfying and often goes unacknowledged. Working on an application so close to prod was quite new to me, having spent the last few years in product teams that were quite removed from the people handling the day to day operations and implementations. 
+The theme with the first few months of 2015 was work and Counter Strike. 
 
-My contract ended May 1 and on May 4th we were off to the USA.
+Working on an application so close to prod was quite new to me, having spent the last few years in product teams that were quite removed from the people handling the day to day operations and implementations. Fixing bugs _before_ they come an issue in prod is immensely satisfying and often goes unacknowledged (or overshadowed by the bugs you didn't catch).
+
+My contract ended May 1 and on May 4th we were off to the USA:
 
 	June x
 	Navigated a paddle boat around prospect park lake
 
-I'm on a boat! Well kind of. For most of May and June my girlfriend and I were travelling through the US having a great time. On this day, after a rocky start, we conquered the backwards steering and enjoyed a nice afternoon in the middle of Prospect Park lake in Brooklyn, NYC.
+I'm on a boat! Well kind of. For most of May and June my girlfriend and I were travelling through the US having a great time. On this day, after a rocky start, we conquered the reverse steering and enjoyed a nice afternoon in the middle of Prospect Park lake in Brooklyn, NYC.
 
 	June 22
 	Applied for Web Dev role at CERN
@@ -72,11 +76,9 @@ I'm on a boat! Well kind of. For most of May and June my girlfriend and I were t
 	July 1
 	Accepted for position as contractor at a digital agency
 
-Having just arrived in the UK after burning through cash in the US it was time to find a job. I'd seen someone tweet the CERN job while we were on holiday and applied a few days after we landed in London. It was a long shot but I had nothing to lose. 
+Applying for jobs is hard work and each job application is an achievemnt in it's own right. I went through the usual channels of putting my CV on a jobs site and I'd seen someone tweet the CERN job while we were on holiday so I applied for that as well.
 
-After uploading my CV to a jobs site the phone kept ringing. I had a few phone interviews the first week and a few in person the next week. 
-
-I was quite excited about an interview with a start up photo sharing site. After a disastrous interview I was not offered the role and took up the contracting position. It wasn't my dream job but as a contractor I could cash in while keeping a lookout for something better.
+I was quite excited about an interview with a start up photo sharing site. After a disastrous technical interview I was not offered the role and took up the contracting position. It wasn't my dream job but as a contractor I could cash in while keeping a lookout for something better.
 
 	July 20
 	Created Python script to generate sling mappings
@@ -86,17 +88,17 @@ Looking for ways to make my job more interesting, I started writing a few python
 	July 26
 	Celebrated 2 years with Rachel by moving house. Successfully drove in London.
 
-What better way to celebrate spending 2 years with someone than to move house. This was an incredible stressful day. Foolishly only booking the zip car van for 2 hours meant we were rushing the whole time, and when you rush everything that could go wrong does go wrong! We made it in the end, returning the van only 5 minutes late. We would have a make up annivessary dinner on a Thames boat cruise later that week.
+What better way to celebrate spending 2 years with someone than to move house. This was an incredibly stressful day. Foolishly only booking the zip car van for 2 hours meant we were rushing the whole time, and when you rush everything that could go wrong does go wrong! We made it in the end, returning the van only 5 minutes late. We would have a make up annivessary dinner on a Thames boat cruise later that week.
 
 	August 14
 	Implemented dynamic text replacement tag. Received a "Nice work" from dubious coworker
 
-I like to start slow at new a job. Get a feel for how things work and why. Once I've found a thing that is broken and I know can be better I'm able to introduce a fix. Receiving praise from a coworker is icing on the cake.
+I like to start slow at new a job. Get a feel for how things work and why, once I've found a thing that is broken and I know can be better I'm able to introduce a fix. Receiving "nice work" from a coworker is icing on the cake.
 
 	September 1
 	Long listed for CERN experienced web developer role
 
-Remember that job I applied for in June? They've finally got around to selecting candidates for testing and interviews.
+Remember that job I applied for in June? They finally got around to selecting candidates for testing and interviews.
 
 	September 3
 	Identified issue with java Locale causing issues for Indonesia authorisation
@@ -104,15 +106,15 @@ Remember that job I applied for in June? They've finally got around to selecting
 	September 10
 	Fix verified in prod for Indonesian authorisation issue
 
-Indonesia changed its locale a few years ago and to maintain backwards compatibility, Java has special handling for its locale. In the Javadocs you can read about the side effects and it tells you what not  do. Yea, we were doing that and it didn't work.
+Indonesia changed its locale a few years ago and to maintain backwards compatibility, Java has special handling for its locale. In the Javadocs you can read about the side effects and it tells you what not do. Yea, we were doing that and it didn't work.
 
 	September 15
 	Short listed for CERN job
 
 	September 30
-	Veral offer for CERN job
+	Verbal offer for CERN job
 
-After an online test and a pre-recorded video interview I flew to Geneva for a day long in person interview with 6 other candidates at CERN. I wasn't very confident afterwards but a few days later they called to say they liked me and if I was interested they'd like to make me an offer! 
+After an online test and a pre-recorded video interview I flew to Geneva, Switzerland for a day long in person interview with 6 other candidates at CERN. I wasn't feeling very confident afterwards but a few days later they called to say they liked me and wanted to know if I was interested in the job. They'd like to make me an offer! 
 
 	October 9
 	Scored for Wapping 8s. Won 4-2
@@ -148,10 +150,12 @@ Having only been with the agency for a few months I'd already become a valuable 
 	Identified and fixed issue blocking Hungary go live
 
 	December 1
-	Promptly fixed issue that broke prices in live environment by identifying issue initializing properties and overriding when the shouldn't be
+	Promptly fixed issue that broke prices in live environment by identifying error initializing properties and overriding when the shouldn't be
 
 It was a busy time between quitting and my last day. There were a lot of releases to support and a dev team in Colombia to bring up to speed. On the 18th of December I finished work for the year and spent the week enjoying the best London at Christmas time has to offer. Spent Christmas with family and friends and then packed up my stuff and moved to Geneva.
 
-For 2016 I hope to continue making the most of all opportunities presented to me. CERN looks like a great place to work and I'm looking forward to a year of hard work and constant learning. I will continue to keep a list of victories but will focus more on non work related achivements.
+For 2016 I hope to continue making the most of all opportunities presented to me. CERN is a great place to work so far and I'm looking forward to a year of hard work and constant learning. 
+
+I will continue to keep a list of victories but will focus more on non work related achivements.
 
 As for Counter Strike, I made it up to "Master Guardian Elite" before the ranking system was changed, ending at "Master Guardian I".
