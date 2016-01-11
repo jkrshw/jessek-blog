@@ -14,7 +14,9 @@ Around this time last year I saw a tweet from [@anildash](https://twitter.com/an
 </a>
 </blockquote>
 
-The idea being, it's easy to remember the failures throughout the year and let the good things slip by. For me it was about self confidence and an increased willingness to praise myself for small achievements.
+
+
+The idea being, it's easy to remember the failures throughout the year and let the good things slip by. <!-- PELICAN_END_SUMMARY --> For me it was about self confidence and an increased willingness to praise myself for small achievements.
 
 Here are my 2015 achievements with a bit of added commentary:
 
