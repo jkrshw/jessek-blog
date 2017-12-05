@@ -1,12 +1,17 @@
 language: python
+dist: trusty
 python:
 - '2.7'
-cache: apt
+addons:
+  apt:
+    packages:
+    - optipng
+    - libjpeg-progs
+    - wget
+    - coreutils
 install:
 - pip install -r requirements.txt
 - pelican-themes -i pure
-- sudo apt-get update
-- sudo apt-get install optipng libjpeg-progs wget coreutils
 script: make publish
 before_deploy: deploy/simple-sync.py
 deploy:
