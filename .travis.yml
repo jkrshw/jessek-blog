@@ -8,8 +8,6 @@ addons:
     packages:
     - optipng
     - libjpeg-progs
-    - wget
-    - coreutils
 install:
 - pip install -r requirements.txt
 - pelican-themes -i pure
