@@ -7,7 +7,7 @@ During some maintenance of a materialised view in Greybook we investigated wheth
 necessary or could be replaced with a view.
 
 After some testing we discovered a nasty query that resulted in the [Efficient Data Access with 
-PIVOT](efficient-data-access-with-pivot.html) blog post and decided that for now we would leave 
+PIVOT](/2022/04/efficient-data-access-with-pivot.html) blog post and decided that for now we would leave 
 the materialised view as is and only make the small change necessary for the task at hand, but we 
 would replace one unused index with another index similar to one in the source table as it seemed 
 like an obvious index that would improve performance.

@@ -166,4 +166,4 @@ But ...
 -------
 
 But what if your table already contains indexes and query performance is still not satisfactory? 
-Maybe partitioning could be helpful... see [Improving performance with partitions](improving-performance-with-partitions.html)
+Maybe partitioning could be helpful... see [Improving performance with partitions](/2021/06/improving-performance-with-partitions.html)

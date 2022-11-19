@@ -3,7 +3,7 @@ Date: 2021-06-21 10:20
 Tags: performance, oracle, partitions
 Slug: improving-performance-with-partitions
 
-In the last post: [Database Performance Tuning](/...), we saw how applying an index can greatly 
+In the last post: [Database Performance Tuning](/2021/05/database-performance-tuning.html), we saw how applying an index can greatly 
 improve query performance. But what happens when a table already has all the possible indexes and 
 performance is still not as good as we want?
 
