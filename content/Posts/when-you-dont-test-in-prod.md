@@ -88,4 +88,4 @@ Now go watch this [talk from the co-founder of Honeycomb, Charity Majors @mipsyt
 ![](|filename|/images/test_in_prod_1.png)
 ![](|filename|/images/test_in_prod_2.png)
 
-https://www.infoq.com/presentations/testing-production-2018
+<https://www.infoq.com/presentations/testing-production-2018>

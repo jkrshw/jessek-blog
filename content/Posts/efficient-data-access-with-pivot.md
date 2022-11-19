@@ -296,8 +296,8 @@ of priority.
 
 Resources
 ---------
-* https://www.oracle.com/technical-resources/articles/database/sql-11g-pivot.html
-* https://docs.oracle.com/cd/B28359_01/server.111/b28286/statements_10002.htm#SQLRF01702
-* https://www.oracletutorial.com/oracle-basics/oracle-pivot/
-* https://blog.jooq.org/tag/pivot/
-* https://blog.jooq.org/how-to-benchmark-alternative-sql-queries-to-find-the-fastest-query/
+* <https://www.oracle.com/technical-resources/articles/database/sql-11g-pivot.html>
+* <https://docs.oracle.com/cd/B28359_01/server.111/b28286/statements_10002.htm#SQLRF01702>
+* <https://www.oracletutorial.com/oracle-basics/oracle-pivot/>
+* <https://blog.jooq.org/tag/pivot/>
+* <https://blog.jooq.org/how-to-benchmark-alternative-sql-queries-to-find-the-fastest-query/>
