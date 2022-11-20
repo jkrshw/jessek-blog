@@ -25,15 +25,19 @@ person had a particular status.
 We can see this in a simple example:
 
 ### Contract History
-|| Person ID || Status || Start Date || End Date ||
-| 123456 | USER | 2001-01-01 | 2004-03-31 |
-| 123456 | USER | 2004-04-01 | 2010-01-31 |
-| 123456 | STAFF | 2010-02-01 |	
+
+| Person ID | Status | Start Date | End Date   |
+|-----------|--------|------------|------------|
+| 123456    | USER   | 2001-01-01 | 2004-03-31 |
+| 123456    | USER   | 2004-04-01 | 2010-01-31 |
+| 123456    | STAFF  | 2010-02-01 |            |
 
 ### Merged Contract History
-|| Person ID || Status || Start Date || End Date ||
-| 123456 | USER | 2001-01-01 | 2010-01-31 |
-| 123456 | STAFF | 2010-02-01 | |
+
+| Person ID | Status | Start Date | End Date   |
+|-----------|--------|------------|------------|
+| 123456    | USER   | 2001-01-01 | 2010-01-31 |
+| 123456    | STAFF  | 2010-02-01 |            |
 
 The 2 consecutive USER contracts have been merged in to a single period followed by a STAFF contract.
 Of course, the source table would contain the contract history for many other people as well as 
@@ -41,7 +45,7 @@ secondary assignments, and possibly multiple disjointed periods of the same type
 
 How is this achieved? When I consider database performance, I like to imagine how I would solve the 
 problem if each row was a physical card and I had to arrange them by hand to get the desired result. 
-\My approach might be to get all of the cards for a particular person, order them by contract start 
+My approach might be to get all of the cards for a particular person, order them by contract start 
 date, then starting with the first card, check if the next card is for the same logical contract, 
 that is the start date follows from the previous card's end date and they are both for the same 
 status, and then continue until there is a break in the sequence. I can then take the contract start 
