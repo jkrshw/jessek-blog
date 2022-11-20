@@ -118,7 +118,7 @@ WHERE
 
 Using SQL developer to review the plan we can see what if any indexes are used to support the query:
 
-![](checksheet_plan.png)
+![](/images/checksheet_plan.png)
 
 The plan shows FULL access of the checksheet table with no indexes. Perfect, we can easily add an 
 index on cr_date since most of the queries use a date range

@@ -51,7 +51,7 @@ detected the issue we could have fixed the DBMS jobs and restarted the data refr
 ever noticing. Unfortunately we didn't and it took a few weeks for a user to complain and raise a 
 support incident that then required time for the supporter to investigate and the issue and fix it.
 
-![](/images/dmbs_jobs_granfana.png)
+![](/images/dmbs-jobs-granfana.png)
 
 HTTP Performance
 ----------------
