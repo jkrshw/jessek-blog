@@ -29,12 +29,11 @@ accent_image: /images/cover.jpg
 accent_color: rgb(79,177,186)
 
 hydejack:
-  no_drawer:           true
   cookies_banner:      true
 
 menu:
   - title:             Archives
-    url:               /archives
+    url:               /archives.html
 
 defaults:
   - scope:
