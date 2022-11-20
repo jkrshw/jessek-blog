@@ -28,6 +28,9 @@ accent_color: rgb(79,177,186)
 
 hydejack:
   cookies_banner:      true
+  no_breadcrumbs:      true
+  no_drawer:           true
+  no_navbar:           true
 
 menu:
   - title:             Archives
