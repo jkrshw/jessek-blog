@@ -1,19 +1,52 @@
 title: jessek
-email: jesse.kershaw@gail.com
 description: >- 
   Collection of blog posts on linux tips and software engineering.
-baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://jessek.co.nz"
 twitter_username: jkrshw
 github_username:  jkrshw
+disqus: jessek
+google_analytics: "UA-36273008-1"
+
+paginate: 5
 
 # Build settings
-theme: minima
+theme: jekyll-theme-hydejack
 plugins:
+  - jekyll-default-layout
   - jekyll-feed
+  - jekyll-optional-front-matter
+  - jekyll-paginate
+  - jekyll-readme-index
+  - jekyll-redirect-from
+  - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-titles-from-headings
+  - jekyll-include-cache
+  - jekyll-last-modified-at
+
+accent_image: /images/cover.jpg
+accent_color: rgb(79,177,186)
+
+hydejack:
+  no_drawer:           true
+  cookies_banner:      true
+
+menu:
+  - title:             Archives
+    url:               /archives
+
+defaults:
+  - scope:
+      type: posts
+    values:
+      comments: true
+  - scope:
+      path:            images/
+    values:
+      sitemap:         false
 
 collections:
   posts:
     output: true
     permalink: /:year/:month/:slug:output_ext
-
