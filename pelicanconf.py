@@ -22,7 +22,6 @@ MENUITEMS = (('Archive', './archives.html'),)
 SOCIAL = (
     ('github', 'https://github.com/jkrshw/'),
     ('twitter-square', 'https://twitter.com/jkrshw'),
-    ('google-plus-square', 'https://plus.google.com/+JesseKershaw'),
 )
 
 TWITTER_USERNAME = "jkrshw"

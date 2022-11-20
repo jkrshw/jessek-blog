@@ -1,6 +1,6 @@
 Title: SSH Socks Proxy
 Date: 2011-09-30 16:37
-Tags: ssh, proxy
+Tags: ssh, proxy, linux
 Slug: ssh-socks-proxy
 
 More SSH goodness.

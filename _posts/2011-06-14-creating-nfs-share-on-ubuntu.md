@@ -1,6 +1,6 @@
 Title: Creating NFS Share on Ubuntu
 Date: 2011-06-14 10:20
-Tags: nfs, ubuntu
+Tags: nfs, ubuntu, linux
 Slug: creating-nfs-share-on-ubuntu
 
 1. Install nfs-server
