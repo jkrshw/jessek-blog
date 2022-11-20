@@ -134,7 +134,7 @@ git push origin master
 
 You'll now have a successful build that has generated your blog exactly the way you want it! Only one thing.. you can't download the output of build from Travis.
 
-![Travis Passed](|filename|/images/travis-passed.png)
+![Travis Passed](/images/travis-passed.png)
 
 Deploy
 ------

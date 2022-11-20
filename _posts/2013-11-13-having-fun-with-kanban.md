@@ -18,7 +18,7 @@ A larger team I was part of had the luxury of a dedicated Project Manager who wo
 
 Without that luxury I was a bit unsure of how to track my team's performance. Inspired by a co-worker who produced a (dub-step) time lapse video of a few of their stand-ups I thought something similar could be created for our Kanban wall. So for 10 days, after each stand-up I'd take a picture of wall hoping that the end result would tell a story.
 
-![Kanban](|filename|/images/kanban.gif)
+![Kanban](/images/kanban.gif)
 
 ## Results
 

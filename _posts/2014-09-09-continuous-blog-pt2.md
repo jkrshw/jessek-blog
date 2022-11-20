@@ -6,7 +6,7 @@ tags: pelican, blog, performance
 slug: continuous-blogging-pt2
 ---
 
-It's been a while since I moved my blog to Pelican + Github + Travis + S3. At the risk of only blogging about how I build this blog, I thought I'd do a follow up post to [Continuos Blogging](|filename|/Posts/continuous-blog.md). 
+It's been a while since I moved my blog to Pelican + Github + Travis + S3. At the risk of only blogging about how I build this blog, I thought I'd do a follow up post to [Continuos Blogging](/Posts/continuous-blog.md). 
 
 I'm going to give a lighting talk at the [Auckland Continuous Delivery](http://www.meetup.com/Auckland-Continuous-Delivery/events/170237202/) meetup on how I build the blog and there were a few improvements I wanted to get done before the talk. Here's what I did to improve the site's performance.
 
@@ -54,7 +54,7 @@ GZIP compression was the improvement I most wanted to add the to the site's buil
 
 First time around it felt too hard, and possibly impossible with the Travis S3 deployer. In order for S3 to correctly serve an html page that has been compressed, the Content-Encoding metadata for the file has to be set correctly. Thanks to the new option [```detect_encoding: true```](https://github.com/travis-ci/travis-ci/issues/2400) it is possible for Travis to guess and set the Encoding type of a file.
 
-![S3 Content Encoding](|filename|/images/s3-content-encoding.png)
+![S3 Content Encoding](/images/s3-content-encoding.png)
 
 The [gzip_cache](https://github.com/getpelican/pelican-plugins/tree/master/gzip_cache) plugin compresses content into a ``.gz`` file along side the original file. Some web servers (e.g. Ngnix) are able to use the ``.gz`` files as a cache and do not need to perform real time compression.
 

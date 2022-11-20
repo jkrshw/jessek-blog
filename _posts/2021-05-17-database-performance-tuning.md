@@ -40,7 +40,7 @@ the rate of the number of events you get the average processing time per event o
 
 This can be displayed as a bar gauge in a grafana dashboard:
 
-![](|filename|/images/grafana-performance-barchart.png)
+![](/images/grafana-performance-barchart.png)
 
 Try the query in prometheus:
 
@@ -135,7 +135,7 @@ time range. It then has to process the XML content for each of the matches to ch
 Without improving the XML processing an index on cr_date is not going to result in any noticeable 
 performance improvements.
 
-![](|filename|/images/checksheet_plan_index.png)
+![](/images/checksheet_plan_index.png)
 
 Oracle supports XML indexes so I checked with IT if there are any issues with using one: in general 
 no, just be aware of size. With only 12k rows, size isn't a problem here. For an XML index we need 
@@ -153,7 +153,7 @@ cost has improved a bit more and real world performance has improved a lot. What
 that Oracle is using both the XML index and the cr_date index, usually only one index is used per 
 table access but here we benefit from both!
 
-![](|filename|/images/checksheet_plan_weird.png)
+![](/images/checksheet_plan_weird.png)
 
 Results
 -------
@@ -163,7 +163,7 @@ searches. A few days later, the average response time for termination checksheet
 to below 1s, not quite below 0.5s as I would have hoped. However, worst case performance at the 90th 
 and 99th percentile have drastically improved! Almost 99% of all searches are finishing within 2s!
 
-![](|filename|/images/checksheet_plan_results.png)
+![](/images/checksheet_plan_results.png)
 
 But ...
 -------

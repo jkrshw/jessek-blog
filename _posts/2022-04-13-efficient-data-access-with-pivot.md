@@ -14,7 +14,7 @@ which makes it easy to update and ensures consistency.
 Consider this schema. Experiments and institutes are related via a collaboration. In addition, each 
 collaboration may have people assigned to certain roles, e.g. Team Lead and Deputy Team Lead(s).
 
-![](|filename|/images/pivot-erd.png)
+![](/images/pivot-erd.png)
 
 Generally a collaboration has a single team lead and 0-2 deputy team leads. The schema doesn't 
 enforce this, it's just a business rule we know our data generally follows.
@@ -43,7 +43,7 @@ from the collaboration that are indexed foreign keys of the experiment and insti
 is no need to access the cfcol table, the indices and guarantees from the constraint is enough for 
 the dbms to satisfy the query.
 
-![](|filename|/images/plan-join.png)
+![](/images/plan-join.png)
 
 Another aside, the greyed out operations and the "statistics collector" operation indicate that the 
 dbms will do some checks of the distribution of data based on the given parameters before deciding 

@@ -12,7 +12,7 @@ Due to the orientation of the hard drive cage in my case I need to remove the bo
 
 Being clever I realised I could plug the data cable in to the hard drive and then slide the hard drive in to the cage from the main side. I tweeted the results.
 
-![Too clever](|filename|/images/fux.png)
+![Too clever](/images/fux.png)
 
 The right angle cable didn't agree with my shortcut and I failed to follow the _"if it doesn't go in easy, don't force it"_ rule resulting in some bent pins and the plastic guide snapping off and getting stuck in the cable.
 
@@ -25,13 +25,13 @@ More reading indicated this was either due to the conductivity of super glue or 
 
 A few other results indicated more positive outcomes so I gave it a shot. Thinking my best bet was to use the cable that still had the broken part embedded inside so I wouldn't accidentally cause a short and release the magic smoke.
 
-![Blu Tac](|filename|/images/blu-tac-ssd.jpg)
+![Blu Tac](/images/blu-tac-ssd.jpg)
 
 Attempt 1: Blutac
 
 I tried fixing the cable to the hard drive using some Blutac. This may have worked if I had more Blutac but I needed something with a bit more hold and not as permanent as Super Glue.
 
-![Tap](|filename|/images/tape-ssd.jpg)
+![Tap](/images/tape-ssd.jpg)
 
 Attempt 2: Tape
 

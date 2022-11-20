@@ -32,4 +32,4 @@ Googling the error pointed me at the [bug report](http://code.mythtv.org/trac/ti
 
 Reloading the mythweb page <http://localhost/mythweb> displayed the mythweb home page and we're back in action. Now to do something about the horrible skin..
 
-![MythTV Fixed](|filename|/images/mythweb.png)
+![MythTV Fixed](/images/mythweb.png)

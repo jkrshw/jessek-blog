@@ -14,11 +14,11 @@ With the recent early beta (alpha?) release of [Steam OS](http://store.steampowe
 
 ## Unboxing
 
-![Boxed](|filename|/images/ssd-boxed.jpg)
+![Boxed](/images/ssd-boxed.jpg)
 
 I was not surprised to see the case had accumulated quite a lot of dust. The two existing hard drives are attached to a little removable caddie at the front of the case.
 
-![Dusty Vents](|filename|/images/ssd-dusty.jpg)
+![Dusty Vents](/images/ssd-dusty.jpg)
 
 Dusty vents
 
@@ -26,7 +26,7 @@ Shortly after removing the SSD from it's box I realised my first mistake. I'd fo
 
 Not to be defeated so easily I considered a few options and decided to borrow a cradle from my desktop case, utilise the unused CD-ROM cage in the Antec case and a few cable ties to keep everything in place.
 
-![Seems legit](|filename|/images/ssd-yup.jpg)
+![Seems legit](/images/ssd-yup.jpg)
 
 Seems legit
 
@@ -45,7 +45,7 @@ The official Steam OS installer required a [UEFI](http://en.wikipedia.org/wiki/U
 	mount /dev/sdX /cdrom
 5. Select option to Detect and mount CD-ROM to continue
 
-![Steam OS](|filename|/images/ssd-steam.jpg)
+![Steam OS](/images/ssd-steam.jpg)
 
 So far so good
 

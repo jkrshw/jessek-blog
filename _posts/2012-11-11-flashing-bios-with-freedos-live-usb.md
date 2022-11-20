@@ -25,7 +25,7 @@ Create the live disk:
 
 	$ unetbootin
 
-![unetbootin](|filename|/images/flash-unetbootin.png)
+![unetbootin](/images/flash-unetbootin.png)
 
 ## Flash BIOS with Live USB
 

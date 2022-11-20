@@ -80,7 +80,7 @@ EndSection
 
 And with all of that my laptop is up and running with 3D accelerated graphics and it looks great.
 
-![Fixed Display](|filename|/images/ubuntu-laptop-display.png)
+![Fixed Display](/images/ubuntu-laptop-display.png)
 
 ## Resources
 

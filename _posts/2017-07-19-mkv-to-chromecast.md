@@ -16,7 +16,7 @@ If the video you wish to play is enocded with a codec [supported](https://develo
 
 To check the codec information in Ubuntu, right click on the file and view the properties under the Audio/Video tab
 
-![Audio/Video properties](|filename|/images/audio-video-properties.png)
+![Audio/Video properties](/images/audio-video-properties.png)
 
 Use ffmpeg to change the container format
 
@@ -28,7 +28,7 @@ Drag the resulting mp4 into a Chrome window and use the Chromecast extension to 
 
 If the audio format is not supported, e.g. AC-3
 
-![Audio AC-3](|filename|/images/audio-video-ac-3.png)
+![Audio AC-3](/images/audio-video-ac-3.png)
 
 Use ffmpeg to re-encode the audio with the aac codec and leave the video as is
 

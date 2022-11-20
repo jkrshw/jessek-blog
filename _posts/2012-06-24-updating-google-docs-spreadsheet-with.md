@@ -89,4 +89,4 @@ Once the function to retrieve data has been created it can be called from the sp
 
 The published spreadsheet can be added to a Google Sites page using the Google Spreadsheet widget
 
-![AUHC Points](|filename|/images/auhc-points.png)
+![AUHC Points](/images/auhc-points.png)

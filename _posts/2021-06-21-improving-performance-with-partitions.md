@@ -35,7 +35,7 @@ Using the statistics the database engine regularly gathers on the distribution o
 will decide whether to use the index on fou OR dat based on which would result in the fewest results, 
 and then filter based on the second criteria.
 
-![](|filename|/images/without_partitions_explain.png)
+![](/images/without_partitions_explain.png)
 
 Here the database uses the fou index and then filters the results by dat. This is not ideal since we 
 need to maintain multiple indexes but only one of them will actually be used. Especially since the 
@@ -46,7 +46,7 @@ efficient to convert the b-tree index to a bitmap index, combine the resulting i
 access the table. In this example, the table test table only contains data from 2018-01-01, which 
 means performing the bitmap conversion is not too expensive.
 
-![](|filename|/images/withouth_partitions_bitmapconversion_explain.png)
+![](/images/withouth_partitions_bitmapconversion_explain.png)
 
 ### Partitioning to the rescue
 
@@ -71,7 +71,7 @@ when performing a range scan since the the index of each partition is smaller.
 To compare the results of partitioning on our query, we can run the query with Autotrace, which 
 gives the estimated cost as well the actual cost in elapsed time and buffers read.
 
-![](|filename|/images/without_partitions_autotrace.png)
+![](/images/without_partitions_autotrace.png)
 
 The explain plan for the query on the partitioned table shows some new information: the partition_start
 and partition_stop points. These indicate which partitions will be read during the query. Since the 
@@ -82,7 +82,7 @@ Comparing the estimated cost of these 2 plans, we might think that since 49 > 40
 version is better. However, when checking the buffer gets and elapsed time we see the partitioned 
 query is twice as fast.
 
-![](|filename|/images/with_partitions_autotrace.png)
+![](/images/with_partitions_autotrace.png)
 
 ### The catch
 
@@ -97,7 +97,7 @@ select * from orderimages where fou = :supplier
 Without partitioning it is as we might expect, the index is used to find all of the rows that match 
 and they are returned with no additional filtering.
 
-![](|filename|/images/without_partition_nokey_autotrace.png)
+![](/images/without_partition_nokey_autotrace.png)
 
 On the partitioned table, the plan is very similar, except we see that the partition start value is 1, 
 and the partition stop value is 25. This means the engine had to check the local index of each 
@@ -105,7 +105,7 @@ partition for matching rows and then retrieve the results from each partition. I
 result is worse performance. Depending on the data distribution it may not always be worse, since 
 the indexes of a partitioned table will be more compact and may still result in less buffer reads.
 
-![](|filename|/images/with_partitions_nokey_autotrace.png)
+![](/images/with_partitions_nokey_autotrace.png)
 
 If it is common to access the table without filtering on the partition key, a global index could be 
 used instead of a local index.
@@ -137,7 +137,7 @@ ORDER BY SCORE(1) DESC
 The query plan shows partition pruning is used and the context index is scanned for results and then 
 filtered by the dat
 
-![](|filename|/images/with_partition_contains.png)
+![](/images/with_partition_contains.png)
 
 ### Maintenance
 
@@ -167,18 +167,18 @@ So has performance improved? It's difficult to say... the partitioning was appli
 median response times seem slightly better but there is no clear improvement in the upper percentiles. 
 Could it even be worse?
 
-![](|filename|/images/performance.png)
+![](/images/performance.png)
 
 In order to realise any performance gains from partitioning, the search must include a date filter. 
 So what if we check the performance of searches that include a date range:
 
-![](|filename|/images/performance_date.png)
+![](/images/performance_date.png)
 
 Now we start to see an improvement. The 99th percentile is way down, with the odd search still taking
 a long time. But why do less than half of searches include a date range? Checking the search form 
 quickly reveals the answer:
 
-![](|filename|/images/ordersearch_form.png)
+![](/images/ordersearch_form.png)
 
 The form encourages users to make the most expensive type of search by placing the Keyword input 
 first, and discourages using a date range by placing the date inputs to the side without a sensible 

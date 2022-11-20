@@ -10,4 +10,4 @@ Soon after turning on my desktop the internet stops working and I need to reset 
 
 Current fix is to set the IPv6 settings to ignore in the connections settings.
 
-![Ubuntu Network Settings](|filename|/images/ubuntu-network-ipv6.png)
+![Ubuntu Network Settings](/images/ubuntu-network-ipv6.png)

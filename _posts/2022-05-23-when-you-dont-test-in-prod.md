@@ -51,7 +51,7 @@ detected the issue we could have fixed the DBMS jobs and restarted the data refr
 ever noticing. Unfortunately we didn't and it took a few weeks for a user to complain and raise a 
 support incident that then required time for the supporter to investigate and the issue and fix it.
 
-![](|filename|/images/dmbs_jobs_granfana.png)
+![](/images/dmbs_jobs_granfana.png)
 
 HTTP Performance
 ----------------
@@ -72,7 +72,7 @@ well as other metrics such as requests per second and the error rate of requests
 Here's what the average response time looks like for the last month. Can you see when the errant 
 index was created, and then when it was dropped?
 
-![](|filename|/images/grafana-performance.png)
+![](/images/grafana-performance.png)
 
 Special thanks to our colleagues in IT-DB who helped dive in to the query plans for the slow queries 
 and confirm that the new index resulted in sub-optimal query plans and recommended it's removal!
@@ -88,7 +88,7 @@ tasks.
 
 Now go watch this [talk from the co-founder of Honeycomb, Charity Majors @mipsytipsy](https://www.infoq.com/presentations/testing-production-2018)
 
-![](|filename|/images/test_in_prod_1.png)
-![](|filename|/images/test_in_prod_2.png)
+![](/images/test_in_prod_1.png)
+![](/images/test_in_prod_2.png)
 
 <https://www.infoq.com/presentations/testing-production-2018>
