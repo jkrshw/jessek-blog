@@ -27,6 +27,7 @@ pip freeze > requirements.txt
 Use the assets tag in templates to apply filters to one or more resources to generate a single output file:
 
 ```python
+{% raw %}
 # minify css
 {% assets filters="cssmin", output="css/theme.min.css", "css/pure.css", "css/pygments.css" %}
     <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
@@ -36,6 +37,7 @@ Use the assets tag in templates to apply filters to one or more resources to gen
 {% assets filters="closure_js", output="js/packed.js", "js/scroll.js" %}
     <script src="{{ SITEURL }}/{{ ASSET_URL }}"></script>
 {% endassets %}
+{% endraw %}
 ```
 
 Depending on the amount of css and javascript used in your theme, this will drop a few requests from each page load and reduce a bit of whitepsace from the downloads. The ```ASSET_URL``` variable takes care of caching by adding a small hash to the end of the src url.
