@@ -1,4 +1,19 @@
+title: jessek
+email: jesse.kershaw@gail.com
+description: >- 
+  Collection of blog posts on linux tips and software engineering.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://jessek.co.nz"
+twitter_username: jkrshw
+github_username:  jkrshw
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
 collections:
   posts:
     output: true
     permalink: /:year/:month/:slug:output_ext
+
