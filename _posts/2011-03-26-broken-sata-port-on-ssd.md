@@ -2,7 +2,7 @@
 layout: post
 title: Broken SATA port on SSD
 date: 2012-08-19 10:20
-tags: broken, fixed, ssd
+tags: broken fixed ssd
 slug: broken-sata-port-on-ssd
 ---
 

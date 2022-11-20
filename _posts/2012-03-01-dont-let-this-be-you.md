@@ -2,7 +2,11 @@
 layout: post
 title: Don't let this be you
 date: 2012-03-01 10:20
-tags: fail, feb 29, leap day, testing
+tags: 
+ - fail
+ - feb 29
+ - leap day
+ - testing
 slug: dont-let-this-be-you
 ---
 

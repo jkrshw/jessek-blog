@@ -2,7 +2,7 @@
 layout: post
 title: Having fun with Kanban
 date: 2013-11-13 10:20
-tags: kanban, software
+tags: kanban software
 slug: having-fun-with-kanban
 ---
 

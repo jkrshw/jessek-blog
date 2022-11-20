@@ -2,7 +2,7 @@
 layout: post
 title: LaTeX \includegraphics causes font rendering problems
 date: 2012-03-13 10:20
-tags: gimp, LaTex
+tags: gimp LaTex
 slug: latex-includegraphics-causes-font
 ---
 

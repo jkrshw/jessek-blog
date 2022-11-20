@@ -2,7 +2,7 @@
 layout: post
 title: Database Performance Tuning
 date: 2021-05-17 10:20
-tags: performance, oracle, cern
+tags: performance oracle cern
 slug: database-performance-tuning
 ---
 

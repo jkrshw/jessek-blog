@@ -2,7 +2,7 @@
 layout: post
 title: Using Pelican Static Site Generator
 date: 2014-05-04 19:24
-tags: blog, pelican, python
+tags: blog pelican python
 slug: pelican-static-blog
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: SSH Socks Proxy
 date: 2011-09-30 16:37
-tags: ssh, proxy, linux
+tags: ssh proxy linux
 slug: ssh-socks-proxy
 ---
 

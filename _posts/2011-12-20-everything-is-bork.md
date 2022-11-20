@@ -2,7 +2,7 @@
 layout: post
 title: Everything is borke
 date: 2011-12-20 10:20
-tags: broken, linux, nvidia, ubuntu
+tags: broken linux nvidia ubuntu
 slug: everything-is-borke
 ---
 

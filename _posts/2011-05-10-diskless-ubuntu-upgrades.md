@@ -2,7 +2,7 @@
 layout: post
 title: Diskless ubuntu upgrades
 date: 2011-05-10 10:20
-tags: ubuntu, linux
+tags: ubuntu linux
 slug: diskless-ubuntu-upgrades
 ---
 

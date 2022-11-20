@@ -2,7 +2,7 @@
 layout: post
 title: Improving performance with partitions
 date: 2021-06-21 10:20
-tags: performance, oracle, partitions, cern
+tags: performance oracle partitions cern
 slug: improving-performance-with-partitions
 ---
 

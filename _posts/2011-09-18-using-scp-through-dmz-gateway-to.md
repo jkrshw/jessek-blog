@@ -2,7 +2,12 @@
 layout: post
 title: Using scp through a DMZ gateway to a machine behind a firewall using a tunnel
 date: 2011-09-18 10:20
-tags: firewall, linux, scp, ssh, ssh tunneling
+tags: 
+ - firewall 
+ - linux 
+ - scp 
+ - ssh 
+ - ssh tunneling
 slug: using-scp-through-dmz-gateway-to
 ---
 

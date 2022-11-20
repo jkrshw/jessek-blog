@@ -2,7 +2,7 @@
 layout: post
 title: Contributing to OSS
 date: 2014-07-08 09:13
-tags: oss, community
+tags: oss community
 slug: contributing-to-oss
 published: false
 ---

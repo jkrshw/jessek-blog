@@ -2,7 +2,7 @@
 layout: post
 title: MKV to Chromecast
 date: 2017-07-19 20:17
-tags: mkv, chromecast, ffmpeg, linux
+tags: mkv chromecast ffmpeg linux
 slug: mkv-to-chromecast
 ---
 

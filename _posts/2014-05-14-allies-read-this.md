@@ -2,7 +2,7 @@
 layout: post
 title: A Great Read on Allies
 date: 2014-05-14 10:20
-tags: ally, tech
+tags: ally tech
 slug: allies-read-this
 ---
 

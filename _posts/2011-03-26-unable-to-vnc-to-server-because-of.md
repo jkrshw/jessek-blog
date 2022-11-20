@@ -2,7 +2,7 @@
 layout: post
 title: Unable to vnc to server because of gnome-keyring
 date: 2011-03-26
-tags: gnome, ubuntu, vnc, linux
+tags: gnome ubuntu vnc linux
 slug: unable-to-vnc-to-server-because-of
 ---
 

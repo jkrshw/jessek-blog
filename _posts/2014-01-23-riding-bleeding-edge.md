@@ -2,7 +2,7 @@
 layout: post
 title: Riding the bleeding edge
 date: 2014-01-23 10:20
-tags: linux, ssd, steamos, ubuntu
+tags: linux ssd steamos ubuntu
 slug: riding-bleeding-edge
 ---
 

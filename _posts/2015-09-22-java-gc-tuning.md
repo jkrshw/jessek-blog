@@ -2,7 +2,7 @@
 layout: post
 title: Java GC Tuning
 date: 2015-09-22 22:02
-tags: java, gc, contracting, performance, tuning
+tags: java gc contracting performance tuning
 slug: jvm-gc-tuning
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Continuous Blogging
 date: 2014-05-11 09:03
-tags: blogging, travis-ci, github, pelican, python
+tags: blogging travis-ci github pelican python
 slug: continuous-blog
 ---
 

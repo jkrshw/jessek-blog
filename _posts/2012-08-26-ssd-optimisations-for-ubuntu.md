@@ -2,7 +2,7 @@
 layout: post
 title: SSD optimisations for Ubuntu
 date: 2012-08-26 10:20
-tags: grub, optimisation, ssd, ubuntu
+tags: grub optimisation ssd ubuntu
 slug: ssd-optimisations-for-ubuntu
 ---
 

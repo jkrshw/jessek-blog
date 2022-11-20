@@ -2,7 +2,7 @@
 layout: post
 title: Ubuntu nvidia TV out
 date: 2011-03-25
-tags: ubuntu, nvidia, linux
+tags: ubuntu nvidia linux
 slug: ubuntu-nvidia-tv-out
 ---
 

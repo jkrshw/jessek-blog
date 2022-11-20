@@ -2,7 +2,7 @@
 layout: post
 title: Updating google docs spreadsheet with POST request
 date: 2012-06-24 10:20
-tags: apps, script, google, spreadsheet
+tags: apps script google spreadsheet
 slug: updating-google-docs-spreadsheet-with
 ---
 

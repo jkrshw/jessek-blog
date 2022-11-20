@@ -2,7 +2,7 @@
 layout: post
 title: Completely distorted laptop display
 date: 2012-11-11 10:20
-tags: edid, laptop, nvidia, ubuntu, xorg
+tags: edid laptop nvidia ubuntu xorg
 slug: completely-distorted-laptop-display
 ---
 

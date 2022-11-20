@@ -2,7 +2,7 @@
 layout: post
 title: Thoughts from a Code Maniac
 date: 2013-04-15 10:20
-tags: codemania, javascript, js, test
+tags: codemania javascript js test
 slug: thoughts-from-code-maniac
 ---
 

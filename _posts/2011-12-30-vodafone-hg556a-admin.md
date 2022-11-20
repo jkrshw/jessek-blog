@@ -2,7 +2,7 @@
 layout: post
 title: Vodafone HG556a admin
 date: 2011-12-30 10:20
-tags: broadband, dns, google, vodafone
+tags: broadband dns google vodafone
 slug: vodafone-hg556a-admin
 ---
 

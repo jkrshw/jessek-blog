@@ -2,7 +2,7 @@
 layout: post
 title: Simple Victories
 date: 2016-01-10 18:57
-tags: personal, cern
+tags: personal cern
 slug: simple-victories
 ---
 

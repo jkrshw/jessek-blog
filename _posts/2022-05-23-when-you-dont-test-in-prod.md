@@ -2,7 +2,7 @@
 layout: post
 title: When you don't test in prod...
 date: 2022-05-23 10:20
-tags: prod, cern, test, grafana, metrics, performance
+tags: prod cern test grafana metrics performance
 slug: when-you-dont-test-in-prod
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: FuguPass Encryption Scheme
 date: 2013-02-19 10:20
-tags: encryption, fugupass
+tags: encryption fugupass
 slug: fugupass-encryption-scheme
 ---
 

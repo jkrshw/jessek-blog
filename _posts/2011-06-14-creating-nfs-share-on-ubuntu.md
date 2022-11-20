@@ -2,7 +2,7 @@
 layout: post
 title: Creating NFS Share on Ubuntu
 date: 2011-06-14 10:20
-tags: nfs, ubuntu, linux
+tags: nfs ubuntu linux
 slug: creating-nfs-share-on-ubuntu
 ---
 

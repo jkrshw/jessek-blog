@@ -2,7 +2,7 @@
 layout: post
 title: Efficient Data Access with PIVOT
 date: 2022-04-13 10:20
-tags: performance, oracle, pivot, cern
+tags: performance oracle pivot cern
 slug: efficient-data-access-with-pivot
 ---
 

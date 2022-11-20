@@ -2,7 +2,7 @@
 layout: post
 title: Ubuntu Latest Nvidia Drivers
 date: 2011-08-19 16:47
-tags: cuda, nvidia, ubuntu, ppa, linux
+tags: cuda nvidia ubuntu ppa linux
 slug: nvidia-driver-ppa
 ---
 

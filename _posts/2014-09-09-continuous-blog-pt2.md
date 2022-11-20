@@ -2,7 +2,7 @@
 layout: post
 title: Continuous Blogging Pt II
 date: 2014-09-09 17:47
-tags: pelican, blog, performance
+tags: pelican blog performance
 slug: continuous-blogging-pt2
 ---
 

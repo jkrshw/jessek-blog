@@ -2,7 +2,7 @@
 layout: post
 title: Going Fast with Oracle Pattern Matching
 date: 2022-01-17 10:20
-tags: oracle, performance, pattern, cern
+tags: oracle performance pattern cern
 slug: going-fast-with-oracle-pattern-matching
 ---
 

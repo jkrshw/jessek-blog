@@ -2,7 +2,7 @@
 layout: post
 title: Issues with Vodafone DNS
 date: 2011-12-30 10:20
-tags: broadband, dns, google, vodafone
+tags: broadband dns google vodafone
 slug: issues-with-vodafone-dns
 ---
 

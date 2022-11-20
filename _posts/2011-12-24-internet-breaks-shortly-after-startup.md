@@ -2,7 +2,7 @@
 layout: post
 title: Internet breaks shortly after startup
 date: 2011-12-24 10:20
-tags: broken, linux, nvidia, ubuntu
+tags: broken linux nvidia ubuntu
 slug: internet-breaks-shortly-after-startup
 ---
 

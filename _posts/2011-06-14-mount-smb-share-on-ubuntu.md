@@ -2,7 +2,7 @@
 layout: post
 title: Mount SMB Share on Ubuntu
 date: 2011-06-14 10:20
-tags: samba, smb, ubuntu, linux
+tags: samba smb ubuntu linux
 slug: mount-smb-share-on-ubuntu
 ---
 

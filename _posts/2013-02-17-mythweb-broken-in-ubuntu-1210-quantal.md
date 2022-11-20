@@ -2,7 +2,7 @@
 layout: post
 title: Mythweb Broken in Ubuntu 12.10 Quantal Quetzal
 date: 2013-02-17 10:20
-tags: apache, mythtv, mythweb, ubuntu
+tags: apache mythtv mythweb ubuntu
 slug: mythweb-broken-in-ubuntu-1210-quantal
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Flashing BIOS with FreeDos Live USB
 date: 2012-11-11 10:20
-tags: bios, freedos, linux, ubuntu
+tags: bios freedos linux ubuntu
 slug: flashing-bios-with-freedos-live-usb
 ---
 
