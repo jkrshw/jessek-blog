@@ -1,7 +1,10 @@
-Title: Database Performance Tuning
-Date: 2021-05-17 10:20
-Tags: performance, oracle, cern
-Slug: database-performance-tuning
+---
+layout: post
+title: Database Performance Tuning
+date: 2021-05-17 10:20
+tags: performance, oracle, cern
+slug: database-performance-tuning
+---
 
 Successful (legacy) applications can develop performance issues over time as the amount of data in 
 the system grows and the usage evolves. Tuning the database can result in quick performance wins 

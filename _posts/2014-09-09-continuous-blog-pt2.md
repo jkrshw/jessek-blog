@@ -1,7 +1,10 @@
-Title: Continuous Blogging Pt II
-Date: 2014-09-09 17:47
-Tags: pelican, blog, performance
-Slug: continuous-blogging-pt2
+---
+layout: post
+title: Continuous Blogging Pt II
+date: 2014-09-09 17:47
+tags: pelican, blog, performance
+slug: continuous-blogging-pt2
+---
 
 It's been a while since I moved my blog to Pelican + Github + Travis + S3. At the risk of only blogging about how I build this blog, I thought I'd do a follow up post to [Continuos Blogging](|filename|/Posts/continuous-blog.md). 
 

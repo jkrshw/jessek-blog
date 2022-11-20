@@ -1,7 +1,10 @@
-Title: Going Fast with Oracle Pattern Matching
-Date: 2022-01-17 10:20
-Tags: oracle, performance, pattern, cern
-Slug: going-fast-with-oracle-pattern-matching
+---
+layout: post
+title: Going Fast with Oracle Pattern Matching
+date: 2022-01-17 10:20
+tags: oracle, performance, pattern, cern
+slug: going-fast-with-oracle-pattern-matching
+---
 
 The documentation for [Oracle Pattern Matching](https://docs.oracle.com/en/database/oracle/oracle-database/19/dwhsg/sql-pattern-matching-data-warehouses.html) queries is a bit hard to follow, and as soon as regular
 expressions are mentioned things stop making sense. It's then no surprise if you haven't heard of, 

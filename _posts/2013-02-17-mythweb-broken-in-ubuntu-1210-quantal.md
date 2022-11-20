@@ -1,7 +1,10 @@
-Title: Mythweb Broken in Ubuntu 12.10 Quantal Quetzal
-Date: 2013-02-17 10:20
-Tags: apache, mythtv, mythweb, ubuntu
-Slug: mythweb-broken-in-ubuntu-1210-quantal
+---
+layout: post
+title: Mythweb Broken in Ubuntu 12.10 Quantal Quetzal
+date: 2013-02-17 10:20
+tags: apache, mythtv, mythweb, ubuntu
+slug: mythweb-broken-in-ubuntu-1210-quantal
+---
 
 Deciding to resurrect my Mythbox I can a quick sudo mythfilldatabase and then checked mythweb to see what was in the listings. Not surprisingly I was greeted with a rather plain error page indicating a server error occurred while trying to process my request. Oh well, at least something was running.
 

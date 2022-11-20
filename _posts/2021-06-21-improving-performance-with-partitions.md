@@ -1,7 +1,10 @@
-Title: Improving performance with partitions
-Date: 2021-06-21 10:20
-Tags: performance, oracle, partitions, cern
-Slug: improving-performance-with-partitions
+---
+layout: post
+title: Improving performance with partitions
+date: 2021-06-21 10:20
+tags: performance, oracle, partitions, cern
+slug: improving-performance-with-partitions
+---
 
 In the last post: [Database Performance Tuning](/2021/05/database-performance-tuning.html), we saw how applying an index can greatly 
 improve query performance. But what happens when a table already has all the possible indexes and 

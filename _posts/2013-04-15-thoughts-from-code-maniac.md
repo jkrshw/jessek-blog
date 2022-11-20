@@ -1,7 +1,10 @@
-Title: Thoughts from a Code Maniac
-Date: 2013-04-15 10:20
-Tags: codemania, javascript, js, test
-Slug: thoughts-from-code-maniac
+---
+layout: post
+title: Thoughts from a Code Maniac
+date: 2013-04-15 10:20
+tags: codemania, javascript, js, test
+slug: thoughts-from-code-maniac
+---
 
 While I'm still digesting the recent (and awesome) [codemania](http://codemania.co.nz/) conference I thought I'd share my notes taken during the talks.
 

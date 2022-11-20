@@ -1,7 +1,10 @@
-Title: Using Pelican Static Site Generator
-Date: 2014-05-04 19:24
-Tags: blog, pelican, python
-Slug: pelican-static-blog
+---
+layout: post
+title: Using Pelican Static Site Generator
+date: 2014-05-04 19:24
+tags: blog, pelican, python
+slug: pelican-static-blog
+---
 
 Hello! Welcome to the updated [jessek.co.nz](jessek.co.nz).
 

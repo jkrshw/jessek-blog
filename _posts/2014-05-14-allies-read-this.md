@@ -1,7 +1,10 @@
-Title: A Great Read on Allies
-Date: 2014-05-14 10:20
-Tags: ally, tech
-Slug: allies-read-this
+---
+layout: post
+title: A Great Read on Allies
+date: 2014-05-14 10:20
+tags: ally, tech
+slug: allies-read-this
+---
 
 A problem that I have recently started to become aware of is sexism in the tech industry. It was quite a rude awakening, I no longer existed in a naive bubble where merit was rewarded above all else. There is no doubt the problem exists. The solution isn't out of reach but it is hard. Very hard.
 

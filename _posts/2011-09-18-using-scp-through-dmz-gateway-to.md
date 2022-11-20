@@ -1,7 +1,10 @@
-Title: Using scp through a DMZ gateway to a machine behind a firewall using a tunnel
-Date: 2011-09-18 10:20
-Tags: firewall, linux, scp, ssh, ssh tunneling
-Slug: using-scp-through-dmz-gateway-to
+---
+layout: post
+title: Using scp through a DMZ gateway to a machine behind a firewall using a tunnel
+date: 2011-09-18 10:20
+tags: firewall, linux, scp, ssh, ssh tunneling
+slug: using-scp-through-dmz-gateway-to
+---
 
 How to set up port forwarding from your local machine to a remote machine behind a firewall through a gateway machine.
 

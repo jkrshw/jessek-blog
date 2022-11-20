@@ -1,7 +1,10 @@
-Title: FuguPass Encryption Scheme
-Date: 2013-02-19 10:20
-Tags: encryption, fugupass
-Slug: fugupass-encryption-scheme
+---
+layout: post
+title: FuguPass Encryption Scheme
+date: 2013-02-19 10:20
+tags: encryption, fugupass
+slug: fugupass-encryption-scheme
+---
 
 [Last post](http://jessek.co.nz/2013/02/fugupass.html) I introduced the FuguPass password encryption script. In this post I'm going to go over the encryption scheme used which is based on RSA Laboratories [PKCS #5: Password-Based Cryptography Standard](http://www.rsa.com/rsalabs/node.asp?id=2127).
 

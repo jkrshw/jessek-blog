@@ -1,7 +1,10 @@
-Title: Ubuntu Latest Nvidia Drivers
-Date: 2011-08-19 16:47
-Tags: cuda, nvidia, ubuntu, ppa, linux
-Slug: nvidia-driver-ppa
+---
+layout: post
+title: Ubuntu Latest Nvidia Drivers
+date: 2011-08-19 16:47
+tags: cuda, nvidia, ubuntu, ppa, linux
+slug: nvidia-driver-ppa
+---
 
 CUDA programming requires the latest nvidia drivers. Manually installing the drivers from the nvidia website causes headaches after a kernel upgrade.
 

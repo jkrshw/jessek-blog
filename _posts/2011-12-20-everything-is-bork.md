@@ -1,7 +1,10 @@
-Title: Everything is borke
-Date: 2011-12-20 10:20
-Tags: broken, linux, nvidia, ubuntu
-Slug: everything-is-borke
+---
+layout: post
+title: Everything is borke
+date: 2011-12-20 10:20
+tags: broken, linux, nvidia, ubuntu
+slug: everything-is-borke
+---
 
 After upgrading to the 3.0 Linux kernel everything broke. This was somewhat anticipated and I had put it off until after my dissertation was due to avoid any extra stress.
 

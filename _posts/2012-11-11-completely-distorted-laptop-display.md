@@ -1,7 +1,10 @@
-Title: Completely distorted laptop display
-Date: 2012-11-11 10:20
-Tags: edid, laptop, nvidia, ubuntu, xorg
-Slug: completely-distorted-laptop-display
+---
+layout: post
+title: Completely distorted laptop display
+date: 2012-11-11 10:20
+tags: edid, laptop, nvidia, ubuntu, xorg
+slug: completely-distorted-laptop-display
+---
 
 I've installed Ubuntu so many times now and seen the process improve so much over the past few years that I thought replacing Windows 7 with Ubuntu 12.10 would be a piece of cake. Sadly I was wrong.
 

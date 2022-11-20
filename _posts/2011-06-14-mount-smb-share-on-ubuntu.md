@@ -1,7 +1,10 @@
-Title: Mount SMB Share on Ubuntu
-Date: 2011-06-14 10:20
-Tags: samba, smb, ubuntu, linux
-Slug: mount-smb-share-on-ubuntu
+---
+layout: post
+title: Mount SMB Share on Ubuntu
+date: 2011-06-14 10:20
+tags: samba, smb, ubuntu, linux
+slug: mount-smb-share-on-ubuntu
+---
 
 1. Install smb client
 

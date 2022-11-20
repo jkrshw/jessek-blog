@@ -1,7 +1,10 @@
-Title: Issues with Vodafone DNS
-Date: 2011-12-30 10:20
-Tags: broadband, dns, google, vodafone
-Slug: issues-with-vodafone-dns
+---
+layout: post
+title: Issues with Vodafone DNS
+date: 2011-12-30 10:20
+tags: broadband, dns, google, vodafone
+slug: issues-with-vodafone-dns
+---
 
 Vodafone's DNS can be flaky so I have been using Google's Public DNS instead.
 

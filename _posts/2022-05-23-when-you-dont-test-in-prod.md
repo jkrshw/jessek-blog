@@ -1,7 +1,10 @@
-Title: When you don't test in prod...
-Date: 2022-05-23 10:20
-Tags: prod, cern, test, grafana, metrics, performance
-Slug: when-you-dont-test-in-prod
+---
+layout: post
+title: When you don't test in prod...
+date: 2022-05-23 10:20
+tags: prod, cern, test, grafana, metrics, performance
+slug: when-you-dont-test-in-prod
+---
 
 During some maintenance of a materialised view in Greybook we investigated whether it was really 
 necessary or could be replaced with a view.

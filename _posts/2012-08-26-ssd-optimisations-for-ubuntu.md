@@ -1,7 +1,10 @@
-Title: SSD optimisations for Ubuntu
-Date: 2012-08-26 10:20
-Tags: grub, optimisation, ssd, ubuntu
-Slug: ssd-optimisations-for-ubuntu
+---
+layout: post
+title: SSD optimisations for Ubuntu
+date: 2012-08-26 10:20
+tags: grub, optimisation, ssd, ubuntu
+slug: ssd-optimisations-for-ubuntu
+---
 
 With my SSD still working despite the taped up data port it's time to do some tweaks to squeeze out the most performance I can.
 

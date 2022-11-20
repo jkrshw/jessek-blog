@@ -1,7 +1,10 @@
-Title: LaTeX \includegraphics causes font rendering problems
-Date: 2012-03-13 10:20
-Tags: gimp, LaTex
-Slug: latex-includegraphics-causes-font
+---
+layout: post
+title: LaTeX \includegraphics causes font rendering problems
+date: 2012-03-13 10:20
+tags: gimp, LaTex
+slug: latex-includegraphics-causes-font
+---
 
 LaTeX \includegraphics causes font rendering problems
 When using \includegraphics to add a png image to a LaTeX document the text following the image becomes bold and the rendering just looks wrong.

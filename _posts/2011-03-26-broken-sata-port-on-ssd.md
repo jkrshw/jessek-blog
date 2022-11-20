@@ -1,7 +1,10 @@
-Title: Broken SATA port on SSD
-Date: 2012-08-19 10:20
-Tags: broken, fixed, ssd
-Slug: broken-sata-port-on-ssd
+---
+layout: post
+title: Broken SATA port on SSD
+date: 2012-08-19 10:20
+tags: broken, fixed, ssd
+slug: broken-sata-port-on-ssd
+---
 
 Eager to try out my new Samsung 830 SSD I tried to take a few shortcuts while installing it. It didn't go well.
 

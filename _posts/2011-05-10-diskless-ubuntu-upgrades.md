@@ -1,7 +1,10 @@
-Title: Diskless ubuntu upgrades
-Date: 2011-05-10 10:20
-Tags: ubuntu, linux
-Slug: diskless-ubuntu-upgrades
+---
+layout: post
+title: Diskless ubuntu upgrades
+date: 2011-05-10 10:20
+tags: ubuntu, linux
+slug: diskless-ubuntu-upgrades
+---
 
 To upgrade ubuntu off line or to reduce the amount of duplicate data downloaded when upgrading multiple ubuntu machines download the alternate install cd iso, mount it and do the upgrade as if you'd burnt the cd
 

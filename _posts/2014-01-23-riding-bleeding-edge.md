@@ -1,7 +1,10 @@
-Title: Riding the bleeding edge
-Date: 2014-01-23 10:20
-Tags: linux, ssd, steamos, ubuntu
-Slug: riding-bleeding-edge
+---
+layout: post
+title: Riding the bleeding edge
+date: 2014-01-23 10:20
+tags: linux, ssd, steamos, ubuntu
+slug: riding-bleeding-edge
+---
 
 It has been quite some time since I tried hacking around with Linux. Which also means it has been a long time of my HTPC working just fine.
 

@@ -1,7 +1,10 @@
-Title: Catching up on my readings
-Date: 2014-03-23 10:20
-Tags: blogs, links, testing
-Slug: catching-up-on-my-readings
+---
+layout: post
+title: Catching up on my readings
+date: 2014-03-23 10:20
+tags: blogs, links, testing
+slug: catching-up-on-my-readings
+---
 
 ## Sunday reading
 

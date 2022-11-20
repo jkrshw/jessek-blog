@@ -1,7 +1,10 @@
-Title: Having fun with Kanban
-Date: 2013-11-13 10:20
-Tags: kanban, software
-Slug: having-fun-with-kanban
+---
+layout: post
+title: Having fun with Kanban
+date: 2013-11-13 10:20
+tags: kanban, software
+slug: having-fun-with-kanban
+---
 
 I've been Team Lead of a small development team for a few months now. The product and team were new to me at the start as well as the role. It took a while to feel confident in my ability to deliver a quality product and maintain a happy team.
 

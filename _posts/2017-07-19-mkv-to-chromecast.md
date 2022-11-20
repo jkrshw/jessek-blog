@@ -1,7 +1,10 @@
-Title: MKV to Chromecast
-Date: 2017-07-19 20:17
-Tags: mkv, chromecast, ffmpeg, linux
-Slug: mkv-to-chromecast
+---
+layout: post
+title: MKV to Chromecast
+date: 2017-07-19 20:17
+tags: mkv, chromecast, ffmpeg, linux
+slug: mkv-to-chromecast
+---
 
 I bought a Chromecast so I could wirelessly stream video from my PC to my TV. I don't have a 4k TV and don't intend to buying one anytime soon, so the standard Chromecast seemed reasonable.
 

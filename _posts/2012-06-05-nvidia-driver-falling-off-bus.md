@@ -1,7 +1,10 @@
-Title: NVIDIA driver falling off the bus
-Date: 2012-06-05 10:20
-Tags: crash, gpu, logs, nouveau, nvidia, ubuntu
-Slug: nvidia-driver-falling-off-bus
+---
+layout: post
+title: NVIDIA driver falling off the bus
+date: 2012-06-05 10:20
+tags: crash, gpu, logs, nouveau, nvidia, ubuntu
+slug: nvidia-driver-falling-off-bus
+---
 
 ## NVIDIA driver falling off the bus
 

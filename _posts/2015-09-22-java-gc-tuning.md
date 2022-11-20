@@ -1,7 +1,10 @@
-Title: Java GC Tuning
-Date: 2015-09-22 22:02
-Tags: java, gc, contracting, performance, tuning
-Slug: jvm-gc-tuning
+---
+layout: post
+title: Java GC Tuning
+date: 2015-09-22 22:02
+tags: java, gc, contracting, performance, tuning
+slug: jvm-gc-tuning
+---
 
 JVM Garbage Collection wasn't something I'd ever had to worry about. Until recently. GC is a target of many jokes but in my experience it had always worked "good enough". That is, I'd never had the need for a large heap and high throughput.
 

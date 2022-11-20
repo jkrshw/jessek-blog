@@ -1,7 +1,10 @@
-Title: Efficient Data Access with PIVOT
-Date: 2022-04-13 10:20
-Tags: performance, oracle, pivot, cern
-Slug: efficient-data-access-with-pivot
+---
+layout: post
+title: Efficient Data Access with PIVOT
+date: 2022-04-13 10:20
+tags: performance, oracle, pivot, cern
+slug: efficient-data-access-with-pivot
+---
 
 When following good database design principals, data is structured in some sort normalised form, 
 usually Third normal form (3NF). Roughly, a table only contains columns that are all related to the 

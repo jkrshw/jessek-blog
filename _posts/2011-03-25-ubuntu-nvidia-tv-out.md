@@ -1,8 +1,10 @@
-Title: Ubuntu nvidia TV out
-Date: 2011-03-25
-Tags: ubuntu, nvidia, linux
-Slug: ubuntu-nvidia-tv-out
-Summary: Enabling tv out on an nvidia graphics card by editing xorg.conf 
+---
+layout: post
+title: Ubuntu nvidia TV out
+date: 2011-03-25
+tags: ubuntu, nvidia, linux
+slug: ubuntu-nvidia-tv-out
+---
 
 Enabling tv out on an nvidia graphics card by editing xorg.conf 
 

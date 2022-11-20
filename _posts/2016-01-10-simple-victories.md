@@ -1,7 +1,10 @@
-Title: Simple Victories
-Date: 2016-01-10 18:57
-Tags: personal, cern
-Slug: simple-victories
+---
+layout: post
+title: Simple Victories
+date: 2016-01-10 18:57
+tags: personal, cern
+slug: simple-victories
+---
 
 Around this time last year I saw a tweet from [@anildash](https://twitter.com/anildash)
 

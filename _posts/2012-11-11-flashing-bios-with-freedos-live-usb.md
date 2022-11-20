@@ -1,7 +1,10 @@
-Title: Flashing BIOS with FreeDos Live USB
-Date: 2012-11-11 10:20
-Tags: bios, freedos, linux, ubuntu
-Slug: flashing-bios-with-freedos-live-usb
+---
+layout: post
+title: Flashing BIOS with FreeDos Live USB
+date: 2012-11-11 10:20
+tags: bios, freedos, linux, ubuntu
+slug: flashing-bios-with-freedos-live-usb
+---
 
 The bios flasher utility for my Acer Aspire laptop requires a windows or dos installation to run.
 
