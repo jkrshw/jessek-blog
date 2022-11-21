@@ -1,28 +1,23 @@
 jessek-blog
 ===========
 
-Blog built with Pelican and deployed with Travis CI
+Blog built with Jekyll and deployed with Github Actions
 
 Install
 -------
 
 ```
-sudo easy_install pip
-sudo pip install virtualenvwrapper
-mkvirtualenv blog
-pip install -r requirements.txt
-git submodule init
-git submodule update
+bundle install
 ```
 
 Build
 -----
 
 ```
-make publish
+bundle exec jekyll serve
 ```
 
-Travis
+Github
 ------
 
-Push to master to build blog and deploy to Amazon S3
+Push to main to build blog and deploy to Amazon S3
