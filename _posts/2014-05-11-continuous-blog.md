@@ -6,7 +6,7 @@ tags: blogging travis-ci github pelican python
 slug: continuous-blog
 ---
 
-In my last [post](http://jessek.co.nz/2014/05/pelican-static-blog.html), I talked about moving from Blogger to the blog aware static site generator Pelican.
+In my last [post](/2014/05/pelican-static-blog.html), I talked about moving from Blogger to the blog aware static site generator Pelican.
 
 Using make to compile markdown files in to html with a python tool started giving me ideas. The blog's source was already in github and it made sense to move the compilation to an automated tool. Automate everything.
 
